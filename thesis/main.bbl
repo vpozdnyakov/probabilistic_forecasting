@@ -1,0 +1,92 @@
+\begin{thebibliography}{13}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Choi et~al.(2018)Choi, Choi, Kim, Ha, Kim, and Choo]{choi2018stargan}
+Y.~Choi, M.~Choi, M.~Kim, J.-W. Ha, S.~Kim, and J.~Choo.
+\newblock Stargan: Unified generative adversarial networks for multi-domain
+  image-to-image translation, 2018.
+
+\bibitem[Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
+  Warde-Farley, Ozair, Courville, and Bengio]{goodfellow2014}
+I.~J. Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
+  A.~Courville, and Y.~Bengio.
+\newblock Generative adversarial networks, 2014.
+
+\bibitem[Hewamalage et~al.(2019)Hewamalage, Bergmeir, and Bandara]{rnn2019}
+H.~Hewamalage, C.~Bergmeir, and K.~Bandara.
+\newblock Recurrent neural networks for time series forecasting: Current status
+  and future directions, 09 2019.
+
+\bibitem[Hyndman and Athanasopoulos(2021)]{fpp3}
+R.~J. Hyndman and G.~Athanasopoulos.
+\newblock \emph{Forecasting: principles and practice, 3rd edition}.
+\newblock OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on May, 2021.
+
+\bibitem[Koochali et~al.(2020)Koochali, Dengel, and Ahmed]{koochali2020like}
+A.~Koochali, A.~Dengel, and S.~Ahmed.
+\newblock If you like it, gan it. probabilistic multivariate times series
+  forecast with gan, 2020.
+
+\bibitem[Lezmi et~al.(2020)Lezmi, Roche, Roncalli, and Xu]{lezmi2020improving}
+E.~Lezmi, J.~Roche, T.~Roncalli, and J.~Xu.
+\newblock Improving the robustness of trading strategy backtesting with
+  boltzmann machines and generative adversarial networks, 2020.
+
+\bibitem[Lim and Zohren(2021)]{tsdeeplearning2021}
+B.~Lim and S.~Zohren.
+\newblock Time-series forecasting with deep learning: a survey.
+\newblock \emph{Philosophical transactions. Series A, Mathematical, physical,
+  and engineering sciences}, 379:\penalty0 20200209, 04 2021.
+\newblock \doi{10.1098/rsta.2020.0209}.
+
+\bibitem[Makridakis et~al.(2020{\natexlab{a}})Makridakis, Spiliotis, and
+  Assimakopoulos]{MAKRIDAKIS202054}
+S.~Makridakis, E.~Spiliotis, and V.~Assimakopoulos.
+\newblock The m4 competition: 100,000 time series and 61 forecasting methods.
+\newblock \emph{International Journal of Forecasting}, 36\penalty0
+  (1):\penalty0 54--74, 2020{\natexlab{a}}.
+\newblock ISSN 0169-2070.
+\newblock \doi{https://doi.org/10.1016/j.ijforecast.2019.04.014}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0169207019301128}.
+\newblock M4 Competition.
+
+\bibitem[Makridakis et~al.(2020{\natexlab{b}})Makridakis, Spiliotis,
+  Assimakopoulos, Chen, Gaba, Tsetlin, and Winkler]{m52020}
+S.~Makridakis, E.~Spiliotis, V.~Assimakopoulos, Z.~Chen, A.~Gaba, I.~Tsetlin,
+  and R.~Winkler.
+\newblock The m5 uncertainty competition: Results, findings and conclusions, 11
+  2020{\natexlab{b}}.
+
+\bibitem[Rasul et~al.(2020)Rasul, Sheikh, Schuster, Bergmann, and
+  Vollgraf]{normflow2020}
+K.~Rasul, A.~Sheikh, I.~Schuster, U.~Bergmann, and R.~Vollgraf.
+\newblock Multi-variate probabilistic time series forecasting via conditioned
+  normalizing flows.
+\newblock \emph{CoRR}, abs/2002.06103, 2020.
+\newblock URL \url{https://arxiv.org/abs/2002.06103}.
+
+\bibitem[Ruthotto and Haber(2021)]{introductiondgm2021}
+L.~Ruthotto and E.~Haber.
+\newblock An introduction to deep generative modeling, 2021.
+
+\bibitem[van~den Oord et~al.(2016)van~den Oord, Dieleman, Zen, Simonyan,
+  Vinyals, Graves, Kalchbrenner, Senior, and Kavukcuoglu]{oord2016wavenet}
+A.~van~den Oord, S.~Dieleman, H.~Zen, K.~Simonyan, O.~Vinyals, A.~Graves,
+  N.~Kalchbrenner, A.~Senior, and K.~Kavukcuoglu.
+\newblock Wavenet: A generative model for raw audio, 2016.
+
+\bibitem[Wiese et~al.(2020)Wiese, Knobloch, Korn, and Kretschmer]{quantgan2020}
+M.~Wiese, R.~Knobloch, R.~Korn, and P.~Kretschmer.
+\newblock Quant gans: deep generation of financial time series.
+\newblock \emph{Quantitative Finance}, 20\penalty0 (9):\penalty0 1419–1440,
+  Apr 2020.
+\newblock ISSN 1469-7696.
+\newblock \doi{10.1080/14697688.2020.1730426}.
+\newblock URL \url{http://dx.doi.org/10.1080/14697688.2020.1730426}.
+
+\end{thebibliography}

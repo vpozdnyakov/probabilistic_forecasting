@@ -1,0 +1,80 @@
+\documentclass{article}
+\usepackage[margin=4cm]{geometry}
+%\setlength{\parindent}{0pt}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{sectsty}
+\usepackage{graphicx}
+\usepackage[square,numbers]{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[hidelinks]{hyperref}
+\usepackage[table]{xcolor}
+
+\bibliographystyle{abbrvnat}
+%\subsectionfont{\normalfont\itshape}
+
+%\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{theorem}{Theorem}[section]
+
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\VaR}{VaR_\alpha}
+
+\title{Probabilistic Multivariate Time Series Forecasting using Deep Generative Models}
+\date{\today}
+
+\author{
+    \small Vitaliy Pozdnyakov \\
+    \small Faculty of Computer Science \\
+    \small \textit{National Research University Higher School of Economics} \\
+    \small Moscow, Russia\\
+    }
+
+\begin{document}
+
+%\maketitle
+
+\abstract{Coming soon.}
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\section{Introduction}
+
+Time series forecasting is a crucial task for decision making in many areas. For example, an accurate demand forecast helps retailers to maintain required in-stock rate of products, improve supply chain operations and reduce delivery time. Deciding whether to build a new power plant requires electricity demand forecasts, scheduling staff in a call centre requires forecasts of call volumes. 
+
+We are trying to forecasts an unknown value and thus we can consider it as a random variable which means that there are many possible future outcomes. There can also be observed the butterfly effect — small deviations in the beginning lead to drastical changes in the future and therefore the relatively near future is more predictable than the distant one. For example, tomorrow sales can be forecasted with high confidence, while next year sales are much more vague. The such uncertanty of a forecast can be represented as a prediction interval of possible values that the random variable could take with relatively high probability. For example, 95\% prediction interval should contain a range of values that will be observed with probablity 0.95. From a statistical point of view, there are possible two types of forecasts: point and probabilistic \cite{fpp3}. A point forecast is a single predicted value, for example the average of possible future values, while probabilistic forecast is a prediction interval or a set of prediction intervals for different confidence levels, say 50\%, 90\%, 95\%, 99\%. The bigger confidence level, the larger prediction interval and vice versa, so the 0\% prediction interval is a single value that actually is the median which means that a half of possible values lie above the interval and a half below it. Note that 0\% prediction interval can also be considered as a point forecast. Forecasting prediction intervals can also be formulated as quantile regression where lower and upper bounds of interval are quantiles, for example 95\% prediction interval can be represented as quantiles 0.025 and 0.975.
+
+In a rapidly changing environment, probabilistic forecasts are becoming increasingly important as they help to understand an uncertanty and underlying risks. For example, selection of target quantiles based on historical sales and stock-out costs of products makes forecasts useful for inventary planning. The fact that sales of modern smartphones can have significant peaks can require a quantile as high as 0.9 to protect againts the risk of the lack of stock. Probabilistic forecast are used in any situations where robust decisions should be made against uncertanty, such as budgeting decisions, trading and hedging strategies. For example, commodity trading companies can decide to optimize a portfolio to reduce risks if a range of supposed losses/profit is too wide. Novel risks involved by COVID-19 pandemic and climate changes clearly show that uncertanty assessment play a key role in the decision making. Another rationale for probabilistic forecasting is that it can determine how much to trust the predictions for underlying problems, as well as distinguish between regions with high and low uncertanty. For example, seasonal sales can be accurately forecasted for periods with high demand, while other periods can have wide range of possible sales.
+
+In many cases, one-dimensional time series are statistically dependent on each other, and this dependency can also be taken into account to improve the accuracy of forecasts \cite{normflow2020}. For example, forecasting total sales of two negatively correlated products involves the fact that simultaneously increasing sales of both products is unrealistic, while independent forecasts cannot account this property. The effect of interacting items is known as the cannibalization effect and it is of great importance in the retail business. In addition, in dealing with economic variables, the value is often not only related to its historical movements, but also to historical movements of other variables. For example, interest rate, income, and investment expenditures may have a large impact on the forecasting household consumption expenditures. Thus, it makes sense to use all available variables using a multivariate forecast instead of an individual ones.
+
+Despite the fact that classical statistical methods of time series forecasting are often used by forecasting practitioners \cite{rnn2019}, recently more and more scientific papers on the use of neural networks for time series forecasting have appeared. Most of them are based on recurrent neural networks, attention-based models, and temporal convolutional networks \cite{tsdeeplearning2021}. In addition, recent public competitions in time series forecasting, such as M4 in 2018 \cite{MAKRIDAKIS202054} and M5 in 2020 \cite{m52020}, have shown that the best quality is achieved by gradient boosting models and neural networks \cite{m52020}. Previously, the use of neural networks was complicated by the fact that they are much more complex than classical statistical models and therefore require more historical data for training, in addition, they require specialists to understand the work and tuning of neural networks. However, now we live in the era of Big Data, companies collect a huge amount of data from day to day, which contains important information about the patterns of their business. In conditions where high-precision forecasting requires the use of all available information, complex models such as neural networks gain a great advantage.
+
+Neural networks have already become popular in many data analysis tasks related to image, video, audio, and text processing. In addition, generative models of neural networks (deep generative models) are actively used in such tasks \cite{introductiondgm2021}. A distinctive feature of such models is that they are able to generate new observations based on previously seen ones. For example, generative adversarial networks (GANs) proposed in \cite{goodfellow2014} are actively used to generate new images \cite{choi2018stargan} and sound \cite{oord2016wavenet}. However, the use of such models for generating time series is only beginning to develop. Generative models can be used not only for generating time series and then obtaining a probabilistic forecast \cite{koochali2020like}, but also for backtesting and improvement the robustness of business strategies \cite{lezmi2020improving}. For example, to check the quality of a trading strategy, the time series is divided into two periods: "in-sample" (train period) and "out-of-sample" (test period). The purpose of this separation is to use the best parameters found on the "in-sample" period and then test the quality of such a strategy on the "out-of-sample" period. This approach has two drawbacks. First, it reduces the number of observations available for training the model, in addition to removing the most relevant observations from the train period, which may contain important information about the trend, seasonality changes and so on. Secondly, it is still based on only one validation split, since we observe only one realization of an unknown random process. To partially solve the second drawback in \cite{fpp3}, a cross-validation method for time series was proposed, which is based on the sequential division of the time series into pairs of periods "in-sample" and "out-of-sample". Generative models offer a new approach to solving this problem — to generate a time series whose characteristics will correspond to the real time series and then get a set of pairs of periods "in-sample" and "out-of-sample". The peculiarity of deep generative models is that they are able to take into account the characteristics of real financial time series: nonlinear autocorrelations, heavy tails, heteroskedasticity, regime change, and non-stationary properties \cite{lezmi2020improving}. For example, the Quant GAN model, as shown in \cite{quantgan2020}, is able to model such characteristics of financial time series.
+
+Several deep generative models for time series forecasting have been proposed in recent years. All of them showed excellent quality and superiority over their competitors. At the same time, different models were considered as the baselines, different datasets, and different quality metrics were used in these works. Some of the models were tested on univariate forecasting, while others were tested on multivariate forecasting. The objectives of this work are:
+\begin{itemize}
+    \item Comparison of such models with each other on the same datasets and quality metrics.
+    \item Presentation of the taxonomy of such models and possible directions for their development and modifications.
+    \item Consideration of the impact on the quality of these models of classical time series preprocessing steps: Box-Cox transformation and differencing.
+\end{itemize}
+
+DESCRIBE THE SECTIONS
+
+\section{Literature review}
+
+\section{Background}
+
+\subsection{Probabilistic model}
+
+\bibliography{main}
+
+\end{document}
