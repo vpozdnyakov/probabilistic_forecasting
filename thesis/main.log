@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  24 MAY 2021 09:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  24 MAY 2021 12:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -427,35 +427,40 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
- [4] [5] [6] [7] [8] [9] [10] [11] (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl [12]
-Underfull \hbox (badness 1281) in paragraph at lines 80--89
+ [4] [5] [6] [7] [8] [9] [10] [11] [12]
+Overfull \hbox (8.77129pt too wide) in paragraph at lines 301--302
+[]\OT1/cmr/bx/n/10.95 Transformer-RealNVP \OT1/cmr/m/n/10.95 com-bines the nor-mal-iz-ing flow and the attension-based model,
+ []
+
+[13] [14] (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl [15]
+Underfull \hbox (badness 1281) in paragraph at lines 93--102
 []\OT1/cmr/m/n/10.95 S. Makri-dakis, E. Spili-o-tis, and V. As-si-makopou-los.  The m4 com-pe-ti-tion:
  []
 
-[13])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+[16])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
+ [17]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
  (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EC1B1301DC18947E72B055588226246D;1637.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+(rerunfilecheck)             Checksum: 25524A2D5F320A4A4BA81CD7CA5D2B0B;1841.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 386.
  ) 
 Here is how much of TeX's memory you used:
- 9171 strings out of 492616
- 135976 string characters out of 6129481
- 256619 words of memory out of 5000000
- 12908 multiletter control sequences out of 15000+600000
+ 9193 strings out of 492616
+ 136395 string characters out of 6129481
+ 256859 words of memory out of 5000000
+ 12921 multiletter control sequences out of 15000+600000
  12501 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,13n,38p,2636b,486s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,13n,38p,2636b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (14 pages, 246217 bytes).
+Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (17 pages, 263283 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 301 compressed objects within 4 object streams
- 61 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 377 PDF objects out of 1000 (max. 8388607)
+ 338 compressed objects within 4 object streams
+ 70 named destinations out of 1000 (max. 500000)
+ 217 words of extra memory for PDF output out of 10000 (max. 10000000)
 

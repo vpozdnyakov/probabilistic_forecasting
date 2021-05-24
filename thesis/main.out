@@ -1,7 +1,7 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Literature reviews}{}% 2
 \BOOKMARK [1][-]{section.3}{Background}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Probabilistic modelling}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Probabilistic modeling}{section.3}% 4
 \BOOKMARK [2][-]{subsection.3.2}{Vector autoregressive model}{section.3}% 5
 \BOOKMARK [3][-]{subsubsection.3.2.1}{Transformations for stationarity}{subsection.3.2}% 6
 \BOOKMARK [2][-]{subsection.3.3}{Deep generative models}{section.3}% 7
@@ -19,6 +19,9 @@
 \BOOKMARK [2][-]{subsection.5.2}{Autocorrelation loss}{section.5}% 19
 \BOOKMARK [2][-]{subsection.5.3}{Correlation loss}{section.5}% 20
 \BOOKMARK [1][-]{section.6}{Datasets}{}% 21
-\BOOKMARK [1][-]{section.7}{Numerical results}{}% 22
-\BOOKMARK [1][-]{section.8}{Implementation details}{}% 23
-\BOOKMARK [1][-]{section.9}{Conclusion}{}% 24
+\BOOKMARK [2][-]{subsection.6.1}{Retail Trade, Australia}{section.6}% 22
+\BOOKMARK [2][-]{subsection.6.2}{Retail australia}{section.6}% 23
+\BOOKMARK [2][-]{subsection.6.3}{Retail australia}{section.6}% 24
+\BOOKMARK [1][-]{section.7}{Numerical results}{}% 25
+\BOOKMARK [1][-]{section.8}{Implementation details}{}% 26
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 27

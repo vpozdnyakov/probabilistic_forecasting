@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{22}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,15 @@ S.~Bai, J.~Z. Kolter, and V.~Koltun.
 \newblock An empirical evaluation of generic convolutional and recurrent
   networks for sequence modeling.
 \newblock \emph{arXiv:1803.01271}, 2018.
+
+\bibitem[Chen et~al.(2020)Chen, Kang, Chen, and Wang]{gaussiantcn2020}
+Y.~Chen, Y.~Kang, Y.~Chen, and Z.~Wang.
+\newblock Probabilistic forecasting with temporal convolutional neural network.
+\newblock \emph{Neurocomputing}, 399:\penalty0 491--501, 2020.
+\newblock ISSN 0925-2312.
+\newblock \doi{https://doi.org/10.1016/j.neucom.2020.03.011}.
+\newblock URL
+  \url{https://www.sciencedirect.com/science/article/pii/S0925231220303441}.
 
 \bibitem[Choi et~al.(2018)Choi, Choi, Kim, Ha, Kim, and Choo]{choi2018stargan}
 Y.~Choi, M.~Choi, M.~Kim, J.-W. Ha, S.~Kim, and J.~Choo.
@@ -33,8 +42,6 @@ V.~M. Guerrero.
 \newblock \emph{Journal of Forecasting}, 12\penalty0 (1):\penalty0 37--48,
   1993.
 \newblock \doi{https://doi.org/10.1002/for.3980120104}.
-\newblock URL
-  \url{https://onlinelibrary.wiley.com/doi/abs/10.1002/for.3980120104}.
 
 \bibitem[Hewamalage et~al.(2019)Hewamalage, Bergmeir, and Bandara]{rnn2019}
 H.~Hewamalage, C.~Bergmeir, and K.~Bandara.
@@ -45,6 +52,12 @@ H.~Hewamalage, C.~Bergmeir, and K.~Bandara.
 R.~J. Hyndman and G.~Athanasopoulos.
 \newblock \emph{Forecasting: principles and practice, 3rd edition}.
 \newblock OTexts: Melbourne, Australia. OTexts.com/fpp3. Accessed on May, 2021.
+
+\bibitem[Koenker(2005)]{Koenker2005}
+R.~Koenker.
+\newblock \emph{Quantile Regression}.
+\newblock Econometric Society Monographs. Cambridge University Press, 2005.
+\newblock ISBN 0521608279.
 
 \bibitem[Koochali et~al.(2020)Koochali, Dengel, and Ahmed]{koochali2020like}
 A.~Koochali, A.~Dengel, and S.~Ahmed.
@@ -105,6 +118,13 @@ K.~Rasul, A.-S. Sheikh, I.~Schuster, U.~M. Bergmann, and R.~Vollgraf.
 \bibitem[Ruthotto and Haber(2021)]{introductiondgm2021}
 L.~Ruthotto and E.~Haber.
 \newblock An introduction to deep generative modeling, 2021.
+
+\bibitem[Salinas et~al.(2019)Salinas, Bohlke-Schneider, Callot, Medico, and
+  Gasthaus]{Salinas2019HighDimensionalMF}
+D.~Salinas, M.~Bohlke-Schneider, L.~Callot, R.~Medico, and J.~Gasthaus.
+\newblock High-dimensional multivariate forecasting with low-rank gaussian
+  copula processes.
+\newblock In \emph{NeurIPS}, 2019.
 
 \bibitem[van~den Oord et~al.(2016)van~den Oord, Dieleman, Zen, Simonyan,
   Vinyals, Graves, Kalchbrenner, Senior, and Kavukcuoglu]{oord2016wavenet}

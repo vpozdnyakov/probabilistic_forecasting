@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex main"] 1621836579 "main.aux" "main.bbl" "main" 1621836581
+["bibtex main"] 1621848096 "main.aux" "main.bbl" "main" 1621848331
   "/usr/local/texlive/2019/texmf-dist/bibtex/bst/natbib/abbrvnat.bst" 1233624470 26532 66bed5cc59495faaa3f9ae9af9fa5e42 ""
-  "main.aux" 1621836580 6602 8e110202cd0b221f37a285d3a85955fd "pdflatex"
-  "main.bib" 1621836576 6263 4bc254bc1f7a0bf5c70542c89dc0423a ""
+  "main.aux" 1621848300 7528 3d95e57a9c653c45733bc2697657a247 "pdflatex"
+  "main.bib" 1621844574 7766 f3876a265aeef99f55dc6900f924f359 ""
   (generated)
-  "main.bbl"
   "main.blg"
-["pdflatex"] 1621836580 "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.tex" "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" "main" 1621836581
-  "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux" 1621836580 6602 8e110202cd0b221f37a285d3a85955fd ""
-  "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.tex" 1621836576 38867 fda9c6d185f61752b197c7778ccfa961 ""
+  "main.bbl"
+["pdflatex"] 1621848299 "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.tex" "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" "main" 1621848331
+  "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux" 1621848300 7528 3d95e57a9c653c45733bc2697657a247 ""
+  "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.tex" 1621848330 47169 6c5929c76a0f4c181ced9825bac99a4d ""
   "/usr/local/texlive/2019/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -111,16 +111,16 @@
   "/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1557342064 3277517 23507ed665b4dd9046f0f2a94bbef2be ""
   "/usr/local/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1579363990 4259636 e9f66f5830253c2ff942dc87326577b9 ""
   "/usr/local/texlive/2019/texmf.cnf" 1557341546 577 d150fef99ac436ad1156e86b0892f6ef ""
-  "main.aux" 1621836580 6602 8e110202cd0b221f37a285d3a85955fd "pdflatex"
-  "main.bbl" 1621836580 5807 4c71cb71a1feeddea2c09ec729e682dd "bibtex main"
-  "main.out" 1621836580 1637 ec1b1301dc18947e72b055588226246d "pdflatex"
-  "main.tex" 1621836576 38867 fda9c6d185f61752b197c7778ccfa961 ""
-  "main.toc" 1621836580 2127 d758f4a074f0b34ddda4250dbd830028 "pdflatex"
+  "main.aux" 1621848300 7528 3d95e57a9c653c45733bc2697657a247 "pdflatex"
+  "main.bbl" 1621848096 6667 750b64e607038907f2a4faa344a7bb6d "bibtex main"
+  "main.out" 1621848300 1841 25524a2d5f320a4a4ba81cd7ca5d2b0b "pdflatex"
+  "main.tex" 1621848330 47169 6c5929c76a0f4c181ced9825bac99a4d ""
+  "main.toc" 1621848300 2385 297a3b552338c1765eae35446a11113e "pdflatex"
   (generated)
   "main.toc"
-  "main.pdf"
   "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.log"
+  "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf"
   "main.out"
   "main.aux"
-  "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf"
   "main.log"
+  "main.pdf"

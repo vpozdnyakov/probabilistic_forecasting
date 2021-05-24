@@ -78,7 +78,7 @@ DESCRIBE THE SECTIONS
 
 \section{Background}
 
-\subsection{Probabilistic modelling}
+\subsection{Probabilistic modeling}
 
 We start from the point (deterministic) forecasting model. Let $y_t \in \mathbb R$ be a single value at the time moment $t$ and $y_1, y_2, \dots, y_T$ be known historical values. For simplicity, let us introduce the notation $y_{1:T} = y_1, y_2, \dots, y_T$. Then the $h$-step-ahead forecasting model can be defined as 
 $$\hat{y}_{T+h} = f(y_T, y_{T-1}, \dots)$$
@@ -165,7 +165,7 @@ L_{G} &=-\ln \ell(\mu, \sigma \mid y) \\
 
 In this limit case, the generator is the identity function $G(\mathbf z, \mathbf y_{T}, \mathbf y_{T-1}, \dots) = \mathbf z$, because the forecasts are already described by tractable simple distribution. We can easily generate future observations from the multivariate Gaussian distribution to obtain a probabilistic forecast.
 
-\subsubsection{Generative adversarial network}
+\subsubsection{Generative adversarial network}\label{gan}
 
 Generative adversarial networks (GANs) are a distribution modeling strategy that uses two neural networks: the generator $G$ and the discriminator $D$. The generator $G$ performs the task of translating samples from a relatively simple distribution of $p_\mathbf z$ to a rich, complex, multidimensional distribution of a stochastic process $p_\mathbf y$. The task of discriminator $D$ is to distinguish the true data from the generated data. The generated and true data in the GAN context are called fake and real data. Strictly speaking, the discriminator's task is to minimize the binary classification error from input data that contains both real and fake data. On the other hand, the task of the generator is to generate such fake data so that it is as difficult as possible for the discriminator to distinguish them from the real ones. The generator and discriminator are trained simultaneously, so they compete until the generator is able to generate indistinguishable data from the real data.
 
@@ -236,7 +236,7 @@ $$
     y_{t} &=\sigma_{y}\left(W_{y} h_{t}+b_{y}\right)
 \end{aligned}
 $$
-where $h_t$ is a hidden state of the cell, $x_t$ is a input sequence, $y_t$ is the output sequence and $\sigma$ is an activation function. Since the model was originally developed for NLP problems, so there is an input and output sequence here. For example, for a machine translation task, $x_t$ can be a text in Russian, and $y_t$ can be a text in English. When forecasting time series, we work with a whole sequence, so to work with time series, we can use a special version of the modelling, in which $y_t = x_{t+1}$. A feature of recurrent neural networks is also that they do not require the selection of a certain number of previous observations, since the observations are processed sequentially one by one.
+where $h_t$ is a hidden state of the cell, $x_t$ is a input sequence, $y_t$ is the output sequence and $\sigma$ is an activation function. Since the model was originally developed for NLP problems, so there is an input and output sequence here. For example, for a machine translation task, $x_t$ can be a text in Russian, and $y_t$ can be a text in English. When forecasting time series, we work with a whole sequence, so to work with time series, we can use a special version of the modeling, in which $y_t = x_{t+1}$. A feature of recurrent neural networks is also that they do not require the selection of a certain number of previous observations, since the observations are processed sequentially one by one.
 
 Due to some problems in the training (exploding and vanishing gradient) of Elman RNN, several other variants of recurrent networks were eventually developed. For example, the Long short-term memory (LSTM) model uses a special cell block state that stores long-term information transmitted through a sequence of observations. The LSTM block is defined via input gate, output gate, forget gate, hidden state and cell state as follows
 $$
@@ -275,18 +275,107 @@ where $W^O \in \mathbb R^{hd_v \times d_\text{model}}$ and thereby $O \in \mathb
 
 \subsubsection{Temporal convolutional network}
 
-Temporal convolutional network was proposed in \cite{BaiTCN2018}
+Temporal convolutional network (TCN) was proposed in \cite{BaiTCN2018} for sequence-to-sequence modeling
+$$\hat{y}_{0}, \ldots, \hat{y}_{T}=f\left(x_{0}, \ldots, x_{T}\right)$$
+but it can also be applied for time series forecasting by
+$$\hat{y}_{0+h}, \ldots, \hat{y}_{T+h}=f\left({y}_{0}, \ldots, {y}_{T} \right)$$
+The TCN is based on two principles: the network maps the original sequence into the sequence of the same length and there are no leakage from the future into the past. The first property is achieved by using one-dimensional full-convolution networks, where all hidden layers preserve the dimension of the input layer, and using zero-padding, which is added to preserve the length of the input sequence. To achieve the second property, the so-called causal convolutions is used, in which elements at time $t$ on the current layer cannot affect elements later than $t$ on the next layer. This is achieved by adding zero-padding only before the first value of each intermediate sequence.
+
+Simple convolution has a disadvantage — the number of observations from the past that can be taken into account at the output of the neural network (receptive field) increases linearly with the growth of the network depth. To solve this problem, dilated convolution is used, which allows to increase the number of observations exponentially. Formally, dilated convolution is defined as follows
+$$F(s)=\left(\mathbf{x} *_{d} f\right)(s)=\sum_{i=0}^{k-1} f(i) \cdot \mathbf{x}_{s-d \cdot i}$$
+where $d$ is dilation factor, $k$ is the kernel size of the kernel $f: {0, 1, \dots, k-1} \to \mathbb R$. Thus, to increase the receptive field, we can use two approaches: increase the kernel, or increase the dilation factor. Typically, TCN uses an exponential growth dilation factor, such as $d = O(2^i)$ on the i-th layer. 
+A TCN consists of several residual blocks that are connected in series. Each time block consists of two causal convolutions and a residual connection so that the output of the blosck with respect to the input $\mathbf x$ is
+$$o=\text {Activation}(\mathbf{x}+\mathcal{F}(\mathbf{x}))$$
+where $\mathcal F$ is series of transformation $\text{Dilated causal convolution} \to \text{Weighted norm} \to \text{ReLU} \to \text{Dropout} \to \text{Dilated causal convolution} \to \text{Weighted norm} \to \text{ReLU} \to \text{Dropout}$.
 
 \section{Experimental setup}
 
+For testing, I chose several models that I found in recent papers on probabilistic forecasting. They use different approaches to generative modeling and are built on different architectures. The choice of models was based on the results of testing conducted by the authors of the articles, as well as on the availability of open source code or an exhaustive description of the algorithm. Note that these models contain some tricky implementation details, and they are not precisely implemented as mentioned earlier, just combining a generative approach and a network architecture, but contain its main components.
+
+\textbf{VAR} is the classical statistical model \cite{fpp3}. Before passing into the model, each time series dataset was preprocessed be seasonal differencing and Box-Cox transformation to make it stationarity. The stationarity was checked using the KPSS test. The order of the model was selected using the BIC criterion.
+
+\textbf{Gaussian TCN} combines the direct parametric approach and the temporal convolutional network, this was proposed in \cite{gaussiantcn2020}. The target distribution is an independent multivariate Gaussian distribution. The hyperparameters were chosen as suggested by the authors of the paper.
+
+\textbf{VEC-LSTM} combines the direct parametric approach and the LSTM, this was proposed in \cite{Salinas2019HighDimensionalMF}. The target distribution is an independent multivariate Gaussian distribution. The hyperparameters were chosen as suggested by the authors of the paper.
+
+\textbf{Transformer-RealNVP} combines the normalizing flow and the attension-based model, this was proposed in \cite{normflow2021}. The hyperparameters were chosen as suggested by the authors of the paper.
+
+I also implemented a model \textbf{TCN-cGAN} that combines conditional GAN and TCN. It is based on the purely generative Quant GAN model introduced in \cite{quantgan2020}, but it is conditional by the historical values, as described in \cite{koochali2020like}. The hyperparameters were chosen as suggested by the authors of the \cite{quantgan2020}.
+
+The minmax scaling was performed for all datasets for all components independently before feeding it to the neural network models to ensure the approximately equal gradients among all components of time series. The minmax scaling is defined as follows
+$$x_\text{scaled} = \frac{x-x_{\min}}{x_{\max} - x_{\min}}$$
+
 \section{Metrics}
+
+All models were trained to solve the problem of probabilistic multivariate forecasting. We are interested in the ability of models to predict future values of a time series, in addition, the ability of models to generate time series that preserve the properties of the data on the trained sample: autocorrelations between time lags and correlations between the components of the time series.
+
 \subsection{Quantile loss}
+
+Quantile Loss (also known as pinball or check loss) is responsible for quantifying the forecasting, this is defined as 
+$$\text{QL}_{u}\left(y, \hat{y}^{(u)}\right)=u\left(y-\hat{y}^{(u)}\right)_{+}+(1-u)\left(\hat{y}^{(u)}-y\right)_{+}$$
+where $y$ is true value, $\hat y^{(u)}$ is u-th quantile and $(\cdot)_+ = \max(0, \cdot)$.
+This loss is derived from the property of the quantile
+$$
+\begin{aligned}
+q_{Y}(\tau) &=\underset{u}{\arg \min } \mathbb E\left(\rho_{\tau}(Y-u)\right)\\
+&=\underset{u}{\arg \min }\left\{(\tau-1) \int_{-\infty}^{u}(y-u) d F_{Y}(y)+\tau \int_{u}^{\infty}(y-u) d F_{Y}(y)\right\}    
+\end{aligned}$$
+where $\rho_{\tau}(y) = y(\tau - \mathbb I_{y<0})$ \cite{Koenker2005}. The full quantile loss in defined as
+
+$$\text{QL} = \frac{2 \sum_{i,t} \text{QL}(y_{i,t}, \hat y_{i,t})}{\sum_{i,t} y_{i, t}}$$
+
 \subsection{Autocorrelation loss}
+
+Autocorrelation loss indicates how close the values of the partial autocorrelatied function (PACF) between test and predicted values
+$$\text{ACL} (y_{i}) = \text{MSE}
+\left(\text{PACF}(y), \frac{1}{N} \sum_{j=1}^N \text{PACF}(\hat y_i^j) \right)
+$$
+where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. In my experiments, I set $N=100$ and number of lags for calculated PACF is 20.
+
 \subsection{Correlation loss}
+
+Correlation loss is given as mean squared error between an empirical correlation matrix of test values and the mean of empirical correlation matricies of generated values
+$$\text{CL} = \text{MSE} \left( R (\mathbf y), \frac{1}{N} \sum_i  R(\hat{\mathbf y}^i) \right)$$
+where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model.
 
 \section{Datasets}
 
+\subsection{Retail Trade, Australia}
+The dataset contains monthly and quarterly estimates of the turnover of Australian businesses, classified by industry, state, and territory. This dataset is provided by the Australian Bureau of Statistics in 2021. Brief description:
+\begin{itemize}
+    \item Period: Apr 1982 - Feb 2021
+    \item Frequency: 1 month
+    \item Number of time series: 187
+    \item Train period: Apr 1982 - Feb 2016
+    \item Test period: Mar 2016 - Feb 2021
+    \item Predictable horizon: 60 
+\end{itemize}
+
+\subsection{Retail australia}
+The dataset contains monthly and quarterly estimates of the turnover of Australian businesses, classified by industry, state, and territory. This dataset is provided by the Australian Bureau of Statistics in 2021. Brief description:
+\begin{itemize}
+    \item Period: Apr 1982 - Feb 2021
+    \item Frequency: 1 month
+    \item Number of time series: 187
+    \item Train period: Apr 1982 - Feb 2016
+    \item Test period: Mar 2016 - Feb 2021
+    \item Predictable horizon: 60
+\end{itemize}
+
+\subsection{Retail australia}
+The dataset contains monthly and quarterly estimates of the turnover of Australian businesses, classified by industry, state, and territory. This dataset is provided by the Australian Bureau of Statistics in 2021. Brief description:
+\begin{itemize}
+    \item Period: Apr 1982 - Feb 2021
+    \item Frequency: 1 month
+    \item Number of time series: 187
+    \item Train period: Apr 1982 - Feb 2016
+    \item Test period: Mar 2016 - Feb 2021
+    \item Predictable horizon: 60
+\end{itemize}
+
 \section{Numerical results}
+
+
 
 \section{Implementation details}
 
