@@ -1,4 +1,24 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section.2}{Literature review}{}% 2
+\BOOKMARK [1][-]{section.2}{Literature reviews}{}% 2
 \BOOKMARK [1][-]{section.3}{Background}{}% 3
-\BOOKMARK [2][-]{subsection.3.1}{Probabilistic model}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Probabilistic modelling}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Vector autoregressive model}{section.3}% 5
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Transformations for stationarity}{subsection.3.2}% 6
+\BOOKMARK [2][-]{subsection.3.3}{Deep generative models}{section.3}% 7
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Direct parametric approach}{subsection.3.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Generative adversarial network}{subsection.3.3}% 9
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Normalizing flow}{subsection.3.3}% 10
+\BOOKMARK [2][-]{subsection.3.4}{Architectures for time series forecasting}{section.3}% 11
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Neural network autoregression}{subsection.3.4}% 12
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Recurrent neural network}{subsection.3.4}% 13
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Attention-based model}{subsection.3.4}% 14
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Temporal convolutional network}{subsection.3.4}% 15
+\BOOKMARK [1][-]{section.4}{Experimental setup}{}% 16
+\BOOKMARK [1][-]{section.5}{Metrics}{}% 17
+\BOOKMARK [2][-]{subsection.5.1}{Quantile loss}{section.5}% 18
+\BOOKMARK [2][-]{subsection.5.2}{Autocorrelation loss}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.3}{Correlation loss}{section.5}% 20
+\BOOKMARK [1][-]{section.6}{Datasets}{}% 21
+\BOOKMARK [1][-]{section.7}{Numerical results}{}% 22
+\BOOKMARK [1][-]{section.8}{Implementation details}{}% 23
+\BOOKMARK [1][-]{section.9}{Conclusion}{}% 24
