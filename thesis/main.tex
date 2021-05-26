@@ -68,7 +68,7 @@ We are trying to forecasts an unknown value and thus we can consider it as a ran
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{potential_future.png}
+    \includegraphics[width=0.6\textwidth]{figures/potential_future.png}
     \caption{Brent crude oil prices for the period from December 26, 2016 to September 10, 2018 and potential future changes starting from December 12, 2017.}
     \label{fig:potential_future}
 \end{figure}
@@ -79,7 +79,7 @@ In many cases, one-dimensional time series are statistically dependent on each o
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.99\textwidth]{correlation_ts.png}
+    \includegraphics[width=0.99\textwidth]{figures/correlation_ts.png}
     \caption{Generated time series. On the left are highly correlated time series, the correlation is 0.98. On the right are highly negatively correlated time series, the correlation is -0.98. }
     \label{fig:correlation_ts}
 \end{figure}
@@ -212,7 +212,7 @@ One of the problems in GAN training is that there are no convergence guarantee. 
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{gan.png}
+    \includegraphics[width=0.8\textwidth]{figures/gan.png}
     \caption{Loss functions during training GAN}
     \label{fig:gan}
 \end{figure}
@@ -258,7 +258,7 @@ Neural network autoregression (NNAR) was described in \cite{fpp3}. Such a neural
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{nnar.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/nnar.pdf}
     \caption{An example of the $\text{NNAR}(p, P, k)_m$ model. The parameters are $p=3$, $P=2$, $k=2$, $m=12$. The predictable horizon $h=1$.}
     \label{fig:nnar}
 \end{figure}
@@ -276,7 +276,7 @@ where $h_t$ is a hidden state of the cell, $x_t$ is a input sequence, $y_t$ is t
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{lstm.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/lstm.pdf}
     \caption{An example of the RNN model. The predictable horizon $h=1$.}
     \label{fig:lstm}
 \end{figure}
@@ -319,7 +319,7 @@ where $W^O \in \mathbb R^{hd_v \times d_\text{model}}$ and thereby $O \in \mathb
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{attention.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/attention.pdf}
     \caption{An example of the multi-head self-attention model. The predictable horizon $h=1$, the window size is 8.}
     \label{fig:attention}
 \end{figure}
@@ -338,7 +338,7 @@ where $d$ is dilation factor, $k$ is the kernel size of the kernel $f: {0, 1, \d
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{tcn.pdf}
+    \includegraphics[width=0.8\textwidth]{figures/tcn.pdf}
     \caption{An example of dilated causal convolutions. The number of convolutions is 4, dilation factor is $2^i$, kernel size is $2$. In this case, the receptive field will be 16. The predictable horizon $h=1$.}
     \label{fig:tcn}
 \end{figure}
@@ -371,7 +371,7 @@ For testing, I chose several models that I found in recent papers on probabilist
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{transformation_var.pdf}
+    \includegraphics[width=0.6\textwidth]{figures/transformation_var.pdf}
     \caption{The transformation, forecasting, inverse transformation pipeline using the VAR model.}
     \label{fig:transformation_var}
 \end{figure}
@@ -455,35 +455,35 @@ VEC-LSTM            &  0.0737 &  0.0021 &  0.0738 \\
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{var.png}
+    \includegraphics[width=0.8\textwidth]{figures/var.png}
     \caption{Example of the forecast via VAR model}
     \label{fig:var}
 \end{figure}
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{transformer_realnvp.png}
+    \includegraphics[width=0.8\textwidth]{figures/transformer_realnvp.png}
     \caption{Example of the forecast via Transformer Real NVP model}
     \label{fig:transformer_realnvp}
 \end{figure}
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{gaussian_tcn.png}
+    \includegraphics[width=0.8\textwidth]{figures/gaussian_tcn.png}
     \caption{Example of the forecast via Gaussian TCN model}
     \label{fig:gaussian_tcn}
 \end{figure}
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{tcn_cgan.png}
+    \includegraphics[width=0.8\textwidth]{figures/tcn_cgan.png}
     \caption{Example of the forecast via TCN cGAN model}
     \label{fig:tcn_cgan}
 \end{figure}
 
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\textwidth]{vec_lstm.png}
+    \includegraphics[width=0.8\textwidth]{figures/vec_lstm.png}
     \caption{Example of the forecast via VEC-LSTM model}
     \label{fig:vec_lstm}
 \end{figure}
