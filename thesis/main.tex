@@ -7,9 +7,9 @@
 \usepackage{sectsty}
 \usepackage{graphicx}
 \usepackage[square,numbers]{natbib}
-\usepackage[utf8]{inputenc}
 \usepackage[russian,english]{babel}
 \usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
 \usepackage{caption}
 \usepackage{subcaption}
 \usepackage[hidelinks]{hyperref}
@@ -46,11 +46,11 @@
 
 \selectlanguage{english} 
 \begin{abstract}
-At present, a new direction has emerged in the time series forecasting using deep generative models, as evidenced by many works of recent years. For the forecasting problem, various approaches are used that have not been previously applied to time series, such as normalizing flows and generative-adversarial networks. On the other hand, neural network architectures for natural language processing tasks, such as recurrent neural networks and attentions, are currently being actively modified to solve time series forecasting problems. This work presents modern approaches for probabilistic time series modeling, as well as the most popular neural network architectures. The classification of models is given by the type of modeling and by the architecture of a neural network. The results of measurements shows that the best quality for various metrics is achived by such models as Gaussian TCN.
+At present, a new direction has emerged in the time series forecasting using deep generative models, as evidenced by many works of recent years. For the forecasting problem, various approaches are used that have not been previously applied to time series, such as normalizing flows and generative-adversarial networks. On the other hand, neural network architectures for natural language processing tasks, such as recurrent neural networks and attentions, are currently being actively modified to solve time series forecasting problems. This work presents modern approaches for probabilistic time series modeling, as well as the most popular neural network architectures. The classification of models is given by the type of modeling and by the architecture of a neural network. The results of measurements shows that the best quality for various metrics is achived by such models as Gaussian TCN and Transformer Real NVP.
 \end{abstract}
 \selectlanguage{russian} 
 \begin{abstract}
-В настоящее время появилось новое направление в прогнозировании временных рядов с использованием глубоких генеративных моделей, о чем свидетельствуют многие работы последних лет. Для задачи прогнозирования используются различные подходы, которые ранее не применялись к временным рядам, такие как нормализующие потоки и генеративно-состязательные сети. С другой стороны, архитектуры нейронных сетей для задач обработки естественного языка, такие как рекуррентные нейронные сети и внимание, в настоящее время активно модифицируются для решения задач прогнозирования временных рядов. В данной работе представлены современные подходы к вероятностному моделированию временных рядов, а также наиболее популярные архитектуры нейронных сетей. Классификация моделей дана по типу моделирования и по архитектуре нейронной сети. Результаты измерений показывают, что наилучшего качества для различных метрик достигают такие модели, как Gaussian TCN.
+В настоящее время появилось новое направление в прогнозировании временных рядов с использованием глубоких генеративных моделей, о чем свидетельствуют многие работы последних лет. Для задачи прогнозирования используются различные подходы, которые ранее не применялись к временным рядам, такие как нормализующие потоки и генеративно-состязательные сети. С другой стороны, архитектуры нейронных сетей для задач обработки естественного языка, такие как рекуррентные нейронные сети и внимание, в настоящее время активно модифицируются для решения задач прогнозирования временных рядов. В данной работе представлены современные подходы к вероятностному моделированию временных рядов, а также наиболее популярные архитектуры нейронных сетей. Классификация моделей дана по типу моделирования и по архитектуре нейронной сети. Результаты измерений показывают, что наилучшего качества для различных метрик достигают такие модели, как Gaussian TCN и Transformer Real NVP.
 \end{abstract}
 \selectlanguage{english} 
 
@@ -66,7 +66,7 @@ Time series forecasting is a crucial task for decision making in many areas. For
 
 We are trying to forecasts an unknown value and thus we can consider it as a random variable which means that there are many possible future outcomes. There can also be observed the butterfly effect — small deviations in the beginning lead to drastical changes in the future and therefore the relatively near future is more predictable than the distant one. For example, tomorrow sales can be forecasted with high confidence, while next year sales are much more vague. Figure \ref{fig:potential_future} shows Brent crude oil prices for the period from December 26, 2016 to September 10, 2018 and potential future changes starting from December 12, 2017, which were generated from a generative model. The further we move away from the dotted line, the wider the range of possible values. The such uncertanty of a forecast can be represented as a prediction interval of possible values that the random variable could take with relatively high probability. For example, 95\% prediction interval should contain a range of values that will be observed with probablity 0.95. From a statistical point of view, there are possible two types of forecasts: point and probabilistic \cite{fpp3}. A point forecast is a single predicted value, for example the average of possible future values, while probabilistic forecast is a prediction interval or a set of prediction intervals for different confidence levels, say 50\%, 90\%, 95\%, 99\%. The bigger confidence level, the larger prediction interval and vice versa, so the 0\% prediction interval is a single value that actually is the median which means that a half of possible values lie above the interval and a half below it. Note that 0\% prediction interval can also be considered as a point forecast. Forecasting prediction intervals can also be formulated as quantile regression where lower and upper bounds of interval are quantiles, for example 95\% prediction interval can be represented as quantiles 0.025 and 0.975.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.6\textwidth]{potential_future.png}
     \caption{Brent crude oil prices for the period from December 26, 2016 to September 10, 2018 and potential future changes starting from December 12, 2017.}
@@ -77,7 +77,7 @@ In a rapidly changing environment, probabilistic forecasts are becoming increasi
 
 In many cases, one-dimensional time series are statistically dependent on each other, and this dependency can also be taken into account to improve the accuracy of forecasts \cite{normflow2021}. For example, forecasting total sales of two negatively correlated products involves the fact that simultaneously increasing sales of both products is unrealistic, while independent forecasts cannot account this property. Examples of such behavior are depicted in the figure \ref{fig:correlation_ts}. The effect of interacting items is known as the cannibalization effect and it is of great importance in the retail business. In addition, in dealing with economic variables, the value is often not only related to its historical movements, but also to historical movements of other variables. For example, interest rate, income, and investment expenditures may have a large impact on the forecasting household consumption expenditures. Thus, it makes sense to use all available variables using a multivariate forecast instead of an individual ones.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.99\textwidth]{correlation_ts.png}
     \caption{Generated time series. On the left are highly correlated time series, the correlation is 0.98. On the right are highly negatively correlated time series, the correlation is -0.98. }
@@ -210,7 +210,7 @@ where $G(\mathbf z | \mathbf{y}_{T}, \mathbf{y}_{T-1}, \dots)$ is a probabilisti
 
 One of the problems in GAN training is that there are no convergence guarantee. Two models are trained simultaneously to find a Nash equilibrium in a non-cooperative two-player game. However, each model updates its parameters independently of the other player in the game. Simultaneous updating of the gradient of both models cannot guarantee convergence. As we can see in the figure \ref{fig:gan}, the loss functions fluctuate, and there is no observed convergence.
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{gan.png}
     \caption{Loss functions during training GAN}
@@ -256,7 +256,7 @@ Different combinations of layers give different neural network architectures. So
 
 Neural network autoregression (NNAR) was described in \cite{fpp3}. Such a neural network is a feed forward network with a single hidden layer. The $\text{NNAR}(p,P,k)_m$ model is defined by 4 parameters, where $p$ is the number of previous observations to be input, $P$ is the number of seasonal observations, $k$ is the number of neurons on the hidden layer, and $m$ is the step for taking seasonal observations. Thereby, the full input of the network is ($y_{t-1}$, $y_{t-2}$, $\dots$, $y_{t-p}$, $y_{t-m}$, $y_{t-2m}$, $\dots$, $y_{t-Pm}$). For example, for the $\text{NNAR}(3, 2, 2)_{12}$ model, previous observations $y_{t-1}, y_{t-2}, y_{t-3}$, seasonal previous observations $y_{t-12}, y_{t-24}$ will be fed in the input, and a hidden linear layer with two neurons will be used for the model (it is shown in the figure \ref{fig:nnar}). By default, the output of the neural network is the forecasted next value $y_t$, so for forecasting the series at step $t+h$, it is performed according to the usual autoregressive manner — the previously forecasted value is fed in input. However, probabilistic forecasting requires a more flexible architecture in which we can use as many outputs as we need to implement the desired model. Therefore, for example, to implement the GAN model, we can use two NNAR neural networks, in which the generator will have the same number of outputs as the number of discriminator inputs.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{nnar.pdf}
     \caption{An example of the $\text{NNAR}(p, P, k)_m$ model. The parameters are $p=3$, $P=2$, $k=2$, $m=12$. The predictable horizon $h=1$.}
@@ -274,7 +274,7 @@ $$
 $$
 where $h_t$ is a hidden state of the cell, $x_t$ is a input sequence, $y_t$ is the output sequence and $\sigma$ is an activation function. Since the model was originally developed for NLP problems, so there is an input and output sequence here. For example, for a machine translation task, $x_t$ can be a text in Russian, and $y_t$ can be a text in English. When forecasting time series, we work with a whole sequence, so to work with time series, we can use a special version of the modeling, in which $y_t = x_{t+1}$. A feature of recurrent neural networks is also that they do not require the selection of a certain number of previous observations, since the observations are processed sequentially one by one. An example of the RNN is depicted in the figure \ref{fig:lstm}. 
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{lstm.pdf}
     \caption{An example of the RNN model. The predictable horizon $h=1$.}
@@ -317,7 +317,7 @@ where $M$ is a mask that can filter the rightward observations by defining all u
 $$O = \text {Concat}\left(\text{head}_{1}, \ldots, \text {head}_{h}\right) W^{O}$$
 where $W^O \in \mathbb R^{hd_v \times d_\text{model}}$ and thereby $O \in \mathbb R^{t \times d_\text{model}}$. This mechanism is called multi-head scaled dot-product attention. The attension layer is used in encoder-decoder manner so that we can set $d_\text{model} = K$ to obtain the forecasted time-series in the same dimensionality as the input sequence. The example of the multi-head self-attention model is depicted in the figure \ref{fig:attention}.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{attention.pdf}
     \caption{An example of the multi-head self-attention model. The predictable horizon $h=1$, the window size is 8.}
@@ -336,7 +336,7 @@ Simple convolution has a disadvantage — the number of observations from the pa
 $$F(s)=\left(\mathbf{x} *_{d} f\right)(s)=\sum_{i=0}^{k-1} f(i) \cdot \mathbf{x}_{s-d \cdot i}$$
 where $d$ is dilation factor, $k$ is the kernel size of the kernel $f: {0, 1, \dots, k-1} \to \mathbb R$. Thus, to increase the receptive field, we can use two approaches: increase the kernel, or increase the dilation factor. Typically, TCN uses an exponential growth dilation factor, such as $d = O(2^i)$ on the i-th layer. An example of dilated causal convolutions is presented in the figure \ref{fig:tcn}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{tcn.pdf}
     \caption{An example of dilated causal convolutions. The number of convolutions is 4, dilation factor is $2^i$, kernel size is $2$. In this case, the receptive field will be 16. The predictable horizon $h=1$.}
@@ -357,7 +357,7 @@ The papers \cite{quantgan2020} and \cite{tsgan} described models for generating 
 
 In the paper \cite{gaussiantcn2020}, examples of using TCN to obtain a probabilistic forecast using a direct probabilistic approach were given. In particular, options for obtaining a quantile forecast and the distribution parameters of a multivariate independent Gaussian distribution for a full probability forecast were presented. As a result of experiments, it was shown that the proposed method shows superiority in the quality and effectiveness of the forecast with other modern forecasting methods.
 
-In \cite{deepar}, a method based on the direct probability approach and RNN was proposed for the problem of forecasting one-dimensional time series. As a result of the tests, it was shown that this method shows the best efficiency compared to its competitors.
+In \cite{deepar}, the DeepAR model based on the direct probability approach and RNN was proposed for the problem of forecasting one-dimensional time series. As a result of the tests, it was shown that this method shows the best efficiency compared to its competitors.
 
 In the works \cite{multihorizon} and \cite{interpr}, a model was proposed that combines the Attention and RNN mechanism to obtain a probable forecast, which also showed the best quality among all the compared models.
 
@@ -369,7 +369,7 @@ For testing, I chose several models that I found in recent papers on probabilist
 
 \textbf{VAR} is the classical statistical model \cite{fpp3}. Before passing into the model, each time series dataset was preprocessed by seasonal differencing and Box-Cox transformation to make it stationarity as close as possible. The stationarity was checked using the KPSS test. The order of the model was selected using the BIC criterion. The transformation, forecasting, inverse transformation pipeline is depicted in the figure \ref{fig:transformation_var}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.6\textwidth]{transformation_var.pdf}
     \caption{The transformation, forecasting, inverse transformation pipeline using the VAR model.}
@@ -380,7 +380,7 @@ For testing, I chose several models that I found in recent papers on probabilist
 
 \textbf{VEC-LSTM} combines the direct parametric approach and the LSTM, this was proposed in \cite{Salinas2019HighDimensionalMF}. The target distribution is an independent multivariate Gaussian distribution. The hyperparameters were chosen as suggested by the authors of the paper.
 
-\textbf{Transformer-RealNVP} combines the normalizing flow and the attension-based model, this was proposed in \cite{normflow2021}. The hyperparameters were chosen as suggested by the authors of the paper.
+\textbf{Transformer Real NVP} combines the normalizing flow and the attension-based model, this was proposed in \cite{normflow2021}. The hyperparameters were chosen as suggested by the authors of the paper.
 
 I also have implemented the model \textbf{TCN-cGAN} that combines conditional GAN and TCN. It is based on the unconditional Quant GAN model introduced in \cite{quantgan2020}, but it is conditional by the historical values, as suggested in \cite{koochali2020like}. The hyperparameters were chosen as suggested by the authors of \cite{quantgan2020}.
 
@@ -404,7 +404,7 @@ q_{Y}(\tau) &=\underset{u}{\arg \min } \mathbb E\left(\rho_{\tau}(Y-u)\right)\\
 \end{aligned}$$
 where $\rho_{\tau}(y) = y(\tau - \mathbb I_{y<0})$ \cite{Koenker2005}. The full u-th quantile loss among all components is normalized by the sum among all components that was proposed in \cite{gaussiantcn2020}:
 $$\text{QL}_u = \frac{2 \sum_{i,t} \text{QL}_u(y_{i,t}, \hat y_{i,t})}{\sum_{i,t} |y_{i, t}|}$$
-And finally, the full quantile loss is the average among all u-th quantile losses.
+And finally, the full quantile loss is the average among all u-th quantile losses. In my experiments, I have calculated the loss for quantiles 0.025, 0.5, 0.975. The first and the last quantiles represent 95\% prediction inteval.
 
 \subsection{Autocorrelation loss}
 
@@ -412,18 +412,18 @@ Autocorrelation loss indicates how close the values of the partial autocorrelati
 $$\text{ACL} (y_{i}) = \text{MSE}
 \left(\text{PACF}(y_i), \frac{1}{N} \sum_{j=1}^N \text{PACF}(\hat y_i^j) \right)
 $$
-where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. In my experiments, I set $N=100$ and number of lags for calculated PACF is 20.
+where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. In my experiments, I set $N=100$ and the number of lags for calculated PACF is 20. The full autocorrelation loss is the avarage among all components of time series.
 
 \subsection{Correlation loss}
 
 Correlation loss is given as mean squared error between an empirical correlation matrix of test values and the mean of empirical correlation matricies of generated values
-$$\text{CL} = \text{MSE} \left( R (\mathbf y), \frac{1}{N} \sum_i  R(\hat{\mathbf y}^i) \right)$$
-where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model.
+$$\text{CL}(\mathbf y_t) = \text{MSE} \left( R (\mathbf y_t), \frac{1}{N} \sum_i  R(\hat{\mathbf y}^i_t) \right)$$
+where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. The full correlation loss is the avarage among all time moments in a predictable horizon.
 
 \section{Dataset}
 
 \subsection{Retail Trade, Australia}
-The dataset contains monthly and quarterly estimates of the turnover of Australian businesses, classified by industry, state, and territory. This dataset is provided by the Australian Bureau of Statistics\footnote{\url{https://www.abs.gov.au/}} in 2021. Brief description:
+The dataset contains monthly and quarterly estimates of the turnover of Australian businesses, classified by industry, state, and territory. This dataset is provided by the Australian Bureau of Statistics \cite{australia2021}. Brief description:
 \begin{itemize}
     \item Period: Apr 1982 - Feb 2021
     \item Frequency: 1 month
@@ -442,10 +442,10 @@ The dataset contains monthly and quarterly estimates of the turnover of Australi
 {} &      QL &      CL &     ACL \\
 \midrule
 Train-test          &       — &  0.0035 &  0.0329 \\
-VAR                 &  0.0533 &  \textbf{0.0018} &  1.9100 \\
+VAR                 &  0.0533 &  0.0858 &  1.9100 \\
 Gaussian TCN        &  \textbf{0.0452} &  0.0640 &  \textbf{0.0444} \\
 TCN cGAN            &  0.0927 &  0.1459 &  0.0613 \\
-Transformer-RealNVP &  0.0635 &  0.0020 &  0.0750 \\
+Transformer Real NVP &  0.0635 &  \textbf{0.0020} &  0.0750 \\
 VEC-LSTM            &  0.0737 &  0.0021 &  0.0738 \\
 \bottomrule
 \end{tabular}
@@ -453,46 +453,46 @@ VEC-LSTM            &  0.0737 &  0.0021 &  0.0738 \\
 \label{table:1}
 \end{table}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{var.png}
     \caption{Example of the forecast via VAR model}
     \label{fig:var}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{transformer_realnvp.png}
-    \caption{Example of the forecast via Transformer-RealNVP model}
+    \caption{Example of the forecast via Transformer Real NVP model}
     \label{fig:transformer_realnvp}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{gaussian_tcn.png}
     \caption{Example of the forecast via Gaussian TCN model}
     \label{fig:gaussian_tcn}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{tcn_cgan.png}
     \caption{Example of the forecast via TCN cGAN model}
     \label{fig:tcn_cgan}
 \end{figure}
 
-\begin{figure}[h!]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\textwidth]{vec_lstm.png}
     \caption{Example of the forecast via VEC-LSTM model}
     \label{fig:vec_lstm}
 \end{figure}
 
-The results obtained are shown in the table \ref{table:1}. As we can see, the best result for the QL metric was shown by the Gaussian TCN model, slightly ahead of the VAR model. At the same time, according to the CL metric, the VAR model was the best, slightly ahead of Transformer-RealNVP. According to the ACL metric, the Gaussian TCN model performed best. Examples of forecasts obtained from the models are in figures \ref{fig:var}, \ref{fig:transformer_realnvp}, \ref{fig:gaussian_tcn}, \ref{fig:tcn_cgan}, \ref{fig:vec_lstm}.
+The results obtained are shown in the table \ref{table:1}. As we can see, the best result for the QL metric was shown by the Gaussian TCN model, slightly ahead of the VAR model. At the same time, according to the CL metric, the Transformer Real NVP model was the best, slightly ahead of VEC-LSTM. According to the ACL metric, the Gaussian TCN model performed best. Examples of forecasts obtained from the models are in figures \ref{fig:var}, \ref{fig:transformer_realnvp}, \ref{fig:gaussian_tcn}, \ref{fig:tcn_cgan}, \ref{fig:vec_lstm}.
 
 \section{Conclusion}
 
-In this work, an attempt was made to generalize modern approaches to time series modeling. The classification of models was given by the type of modeling, as well as by the architecture of neural networks. The resulting review shows that deep generative models for the task of forecasting multivariate time series are actively developing at the present time, so it is likely that the number of such works will only increase in the near future. In addition, using such classification, we can combine the type of generative model and the architecture of the neural network, thereby obtaining new versions of the models. For example, in the literature, I have not yet come across variants of GAN with attention-based models, or TCN with RealNVP.
+In this work, an attempt was made to generalize modern approaches to time series modeling. The classification of models was given by the type of modeling, as well as by the architecture of neural networks. The resulting review shows that deep generative models for the task of forecasting multivariate time series are actively developing at the present time, so it is likely that the number of such works will only increase in the near future. In addition, using such classification, we can combine the type of generative model and the architecture of the neural network, thereby obtaining new versions of the models. For example, in the literature, I have not yet come across variants of GAN with attention-based models, or TCN with Real NVP.
 
 Despite the relative simplicity and efficiency of classical statistical approaches as VAR model, they have certain limitations. The complexity of such models increases quadratically with the number of time series components. Also, they do not take into account the complex nonlinear dependencies between the components of the time series. In addition, they are difficult to modify, for example, combining them with other models for general training. On the other hand, deep generative models have flexibility in customization and can take into account nonlinear dependencies. In addition, the use of data preprocessing techniques from classical statistical approaches can potentially improve the quality of deep models, which is a possible direction of study in this area.
 

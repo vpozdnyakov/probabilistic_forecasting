@@ -1,2 +1,9 @@
 .DS_Store
 ~$results.xlsx
+thesis/main.aux
+thesis/main.bbl
+thesis/main.blg
+thesis/main.fdb_latexmk
+thesis/main.fls
+.gitignore
+thesis/main.synctex.gz

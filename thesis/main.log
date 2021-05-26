@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  26 MAY 2021 05:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  26 MAY 2021 06:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -144,10 +144,6 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip50
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count103
-) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/08/11 v1.3c Input encoding file
-\inpenc@prehook=\toks28
-\inpenc@posthook=\toks29
 ) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2019/05/04 3.31 The Babel package
  (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
@@ -376,7 +372,11 @@ LaTeX Font Info:    Redeclaring font encoding T2A on input line 42.
 LaTeX Font Info:    Try loading font information for T2A+cmr on input line 105.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
-)) (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
@@ -685,21 +685,13 @@ File: gan.png Graphic file (type png)
 <use gan.png>
 Package pdftex.def Info: gan.png  used on input line 215.
 (pdftex.def)             Requested size: 386.95897pt x 127.33624pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9] [10 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gan.png (PNG copy)>]
+ [9] [10 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gan.png (PNG copy)>]
 <nnar.pdf, id=245, 843.15pt x 280.1667pt>
 File: nnar.pdf Graphic file (type pdf)
 <use nnar.pdf>
 Package pdftex.def Info: nnar.pdf  used on input line 261.
 (pdftex.def)             Requested size: 386.95897pt x 128.58327pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[11]
+ [11]
 <lstm.pdf, id=252, 696.68275pt x 330.27388pt>
 File: lstm.pdf Graphic file (type pdf)
 <use lstm.pdf>
@@ -711,76 +703,52 @@ File: attention.pdf Graphic file (type pdf)
 <use attention.pdf>
 Package pdftex.def Info: attention.pdf  used on input line 322.
 (pdftex.def)             Requested size: 386.95897pt x 190.05975pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13]
+ [13]
 <tcn.pdf, id=299, 1493.58pt x 905.30219pt>
 File: tcn.pdf Graphic file (type pdf)
 <use tcn.pdf>
 Package pdftex.def Info: tcn.pdf  used on input line 341.
 (pdftex.def)             Requested size: 386.95897pt x 234.54419pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[14 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/attention.pdf>] [15 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn.pdf>]
+ [14 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/attention.pdf>] [15 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn.pdf>]
 <transformation_var.pdf, id=349, 379.4175pt x 191.7564pt>
 File: transformation_var.pdf Graphic file (type pdf)
 <use transformation_var.pdf>
 Package pdftex.def Info: transformation_var.pdf  used on input line 374.
 (pdftex.def)             Requested size: 290.22107pt x 146.67851pt.
  [16 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformation_var.pdf>] [17]
-<var.png, id=383, 1447.4075pt x 429.605pt>
+<var.png, id=382, 1447.4075pt x 429.605pt>
 File: var.png Graphic file (type png)
 <use var.png>
 Package pdftex.def Info: var.png  used on input line 458.
 (pdftex.def)             Requested size: 386.95897pt x 114.85428pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<transformer_realnvp.png, id=384, 1421.31pt x 423.5825pt>
+<transformer_realnvp.png, id=383, 1421.31pt x 423.5825pt>
 File: transformer_realnvp.png Graphic file (type png)
 <use transformer_realnvp.png>
 Package pdftex.def Info: transformer_realnvp.png  used on input line 465.
 (pdftex.def)             Requested size: 386.95897pt x 115.31891pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<gaussian_tcn.png, id=385, 1425.325pt x 429.605pt>
+<gaussian_tcn.png, id=384, 1425.325pt x 429.605pt>
 File: gaussian_tcn.png Graphic file (type png)
 <use gaussian_tcn.png>
 Package pdftex.def Info: gaussian_tcn.png  used on input line 472.
 (pdftex.def)             Requested size: 386.95897pt x 116.63075pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<tcn_cgan.png, id=386, 1421.31pt x 429.605pt>
+<tcn_cgan.png, id=385, 1421.31pt x 429.605pt>
 File: tcn_cgan.png Graphic file (type png)
 <use tcn_cgan.png>
 Package pdftex.def Info: tcn_cgan.png  used on input line 479.
 (pdftex.def)             Requested size: 386.95897pt x 116.95851pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<vec_lstm.png, id=387, 1429.34pt x 423.5825pt>
+<vec_lstm.png, id=386, 1429.34pt x 423.5825pt>
 File: vec_lstm.png Graphic file (type png)
 <use vec_lstm.png>
 Package pdftex.def Info: vec_lstm.png  used on input line 486.
 (pdftex.def)             Requested size: 386.95897pt x 114.67258pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[18] [19 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/var.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformer_realnvp.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gaussian_tcn.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn_cgan.png (PNG copy)>] (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl [20 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/vec_lstm.png (PNG copy)>]
-Underfull \hbox (badness 1688) in paragraph at lines 144--150
-\OT1/cmr/m/n/12 11 2020.  URL []$\OT1/cmtt/m/n/12 https : / / www . researchgate . net / publication / 346493740 _ The _ M5 _
+ [18] [19 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/var.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformer_realnvp.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gaussian_tcn.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn_cgan.png (PNG copy)>] (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl [20 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/vec_lstm.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 159--163
+\OT1/cmtt/m/n/12 au / statistics / industry / retail-[]and-[]wholesale-[]trade / retail-[]trade-[]australia /
  []
 
 
-Underfull \hbox (badness 4229) in paragraph at lines 166--169
-[]\OT1/cmr/m/n/12 L. Ruthotto and E. Haber.  An in-tro-duc-tion to deep gen-er-a-tive mod-el-ing.
+Underfull \hbox (badness 3138) in paragraph at lines 173--176
+[]\OT1/cmr/m/n/12 L. Ruthotto and E. Haber.  An In-tro-duc-tion to Deep Gen-er-a-tive Mod-el-ing.
  []
 
 [21])
@@ -795,18 +763,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 501.
  ) 
 Here is how much of TeX's memory you used:
- 13246 strings out of 492616
- 187403 string characters out of 6129481
- 289170 words of memory out of 5000000
- 16905 multiletter control sequences out of 15000+600000
- 16170 words of font info for 56 fonts, out of 8000000 for 9000
+ 13238 strings out of 492616
+ 187352 string characters out of 6129481
+ 289204 words of memory out of 5000000
+ 16900 multiletter control sequences out of 15000+600000
+ 14330 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  36i,13n,39p,2636b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (22 pages, 1551259 bytes).
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (22 pages, 1534624 bytes).
 PDF statistics:
- 520 PDF objects out of 1000 (max. 8388607)
- 450 compressed objects within 5 object streams
+ 514 PDF objects out of 1000 (max. 8388607)
+ 446 compressed objects within 5 object streams
  93 named destinations out of 1000 (max. 500000)
  258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
