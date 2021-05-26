@@ -55,10 +55,22 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
-INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-russian/russianb.ldf
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-russian/russianb.ldf
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t2aenc.dfu
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/t2aenc.dfu
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+INPUT /Users/vitalijpozdnakov/Library/texlive/2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
@@ -78,6 +90,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/url/url.sty
@@ -94,6 +108,8 @@ INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux
 OUTPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux
@@ -117,16 +133,17 @@ OUTPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Ma
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.out
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.out
 OUTPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.out
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /Users/vitalijpozdnakov/Library/texlive/2019/texmf-var/fonts/tfm/lh/lh-t2a/larm1095.tfm
+INPUT /Users/vitalijpozdnakov/Library/texlive/2019/texmf-var/fonts/tfm/lh/lh-t2a/labx1095.tfm
 INPUT /usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.toc
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.toc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -146,37 +163,86 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 OUTPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.toc
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/potential_future.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/potential_future.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/potential_future.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/correlation_ts.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/correlation_ts.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/correlation_ts.png
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx8.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx6.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl
-INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gan.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gan.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gan.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/nnar.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/nnar.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/nnar.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/lstm.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/lstm.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/lstm.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/attention.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/attention.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/attention.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformation_var.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformation_var.pdf
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformation_var.pdf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/var.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/var.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/var.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformer_realnvp.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformer_realnvp.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformer_realnvp.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gaussian_tcn.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gaussian_tcn.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gaussian_tcn.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn_cgan.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn_cgan.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn_cgan.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/vec_lstm.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/vec_lstm.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/vec_lstm.png
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl
+INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.out
 INPUT /Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.out
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb

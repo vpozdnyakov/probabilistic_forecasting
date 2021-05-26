@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  24 MAY 2021 12:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  26 MAY 2021 03:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -152,8 +152,8 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 Package: babel 2019/05/04 3.31 The Babel package
  (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2019/05/04 3.31 Babel switching mechanism
-) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-russian/russianb.ldf
+Language: russian 2017/08/12 1.3j Russian support for the Babel system
  (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2019/05/04 3.31 Babel common definitions
 \babel@savecnt=\count104
@@ -161,9 +161,221 @@ File: babel.def 2019/05/04 3.31 Babel common definitions
  (/usr/local/texlive/2019/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count105
 )
+
+Package babel Warning: No Cyrillic font encoding has been loaded so far.
+(babel)                A font encoding should be declared before babel.
+(babel)                Default `T2A' encoding will be loaded  on input line 74.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+Now handling font encoding T2A ...
+... processing UTF-8 mapping file for font encoding T2A
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/base/t2aenc.dfu
+File: t2aenc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0237 (decimal 567)
+   defining Unicode char U+0400 (decimal 1024)
+   defining Unicode char U+0401 (decimal 1025)
+   defining Unicode char U+0402 (decimal 1026)
+   defining Unicode char U+0403 (decimal 1027)
+   defining Unicode char U+0404 (decimal 1028)
+   defining Unicode char U+0405 (decimal 1029)
+   defining Unicode char U+0406 (decimal 1030)
+   defining Unicode char U+0407 (decimal 1031)
+   defining Unicode char U+0408 (decimal 1032)
+   defining Unicode char U+0409 (decimal 1033)
+   defining Unicode char U+040A (decimal 1034)
+   defining Unicode char U+040B (decimal 1035)
+   defining Unicode char U+040C (decimal 1036)
+   defining Unicode char U+040D (decimal 1037)
+   defining Unicode char U+040E (decimal 1038)
+   defining Unicode char U+040F (decimal 1039)
+   defining Unicode char U+0410 (decimal 1040)
+   defining Unicode char U+0411 (decimal 1041)
+   defining Unicode char U+0412 (decimal 1042)
+   defining Unicode char U+0413 (decimal 1043)
+   defining Unicode char U+0414 (decimal 1044)
+   defining Unicode char U+0415 (decimal 1045)
+   defining Unicode char U+0416 (decimal 1046)
+   defining Unicode char U+0417 (decimal 1047)
+   defining Unicode char U+0418 (decimal 1048)
+   defining Unicode char U+0419 (decimal 1049)
+   defining Unicode char U+041A (decimal 1050)
+   defining Unicode char U+041B (decimal 1051)
+   defining Unicode char U+041C (decimal 1052)
+   defining Unicode char U+041D (decimal 1053)
+   defining Unicode char U+041E (decimal 1054)
+   defining Unicode char U+041F (decimal 1055)
+   defining Unicode char U+0420 (decimal 1056)
+   defining Unicode char U+0421 (decimal 1057)
+   defining Unicode char U+0422 (decimal 1058)
+   defining Unicode char U+0423 (decimal 1059)
+   defining Unicode char U+0424 (decimal 1060)
+   defining Unicode char U+0425 (decimal 1061)
+   defining Unicode char U+0426 (decimal 1062)
+   defining Unicode char U+0427 (decimal 1063)
+   defining Unicode char U+0428 (decimal 1064)
+   defining Unicode char U+0429 (decimal 1065)
+   defining Unicode char U+042A (decimal 1066)
+   defining Unicode char U+042B (decimal 1067)
+   defining Unicode char U+042C (decimal 1068)
+   defining Unicode char U+042D (decimal 1069)
+   defining Unicode char U+042E (decimal 1070)
+   defining Unicode char U+042F (decimal 1071)
+   defining Unicode char U+0430 (decimal 1072)
+   defining Unicode char U+0431 (decimal 1073)
+   defining Unicode char U+0432 (decimal 1074)
+   defining Unicode char U+0433 (decimal 1075)
+   defining Unicode char U+0434 (decimal 1076)
+   defining Unicode char U+0435 (decimal 1077)
+   defining Unicode char U+0436 (decimal 1078)
+   defining Unicode char U+0437 (decimal 1079)
+   defining Unicode char U+0438 (decimal 1080)
+   defining Unicode char U+0439 (decimal 1081)
+   defining Unicode char U+043A (decimal 1082)
+   defining Unicode char U+043B (decimal 1083)
+   defining Unicode char U+043C (decimal 1084)
+   defining Unicode char U+043D (decimal 1085)
+   defining Unicode char U+043E (decimal 1086)
+   defining Unicode char U+043F (decimal 1087)
+   defining Unicode char U+0440 (decimal 1088)
+   defining Unicode char U+0441 (decimal 1089)
+   defining Unicode char U+0442 (decimal 1090)
+   defining Unicode char U+0443 (decimal 1091)
+   defining Unicode char U+0444 (decimal 1092)
+   defining Unicode char U+0445 (decimal 1093)
+   defining Unicode char U+0446 (decimal 1094)
+   defining Unicode char U+0447 (decimal 1095)
+   defining Unicode char U+0448 (decimal 1096)
+   defining Unicode char U+0449 (decimal 1097)
+   defining Unicode char U+044A (decimal 1098)
+   defining Unicode char U+044B (decimal 1099)
+   defining Unicode char U+044C (decimal 1100)
+   defining Unicode char U+044D (decimal 1101)
+   defining Unicode char U+044E (decimal 1102)
+   defining Unicode char U+044F (decimal 1103)
+   defining Unicode char U+0450 (decimal 1104)
+   defining Unicode char U+0451 (decimal 1105)
+   defining Unicode char U+0452 (decimal 1106)
+   defining Unicode char U+0453 (decimal 1107)
+   defining Unicode char U+0454 (decimal 1108)
+   defining Unicode char U+0455 (decimal 1109)
+   defining Unicode char U+0456 (decimal 1110)
+   defining Unicode char U+0457 (decimal 1111)
+   defining Unicode char U+0458 (decimal 1112)
+   defining Unicode char U+0459 (decimal 1113)
+   defining Unicode char U+045A (decimal 1114)
+   defining Unicode char U+045B (decimal 1115)
+   defining Unicode char U+045C (decimal 1116)
+   defining Unicode char U+045D (decimal 1117)
+   defining Unicode char U+045E (decimal 1118)
+   defining Unicode char U+045F (decimal 1119)
+   defining Unicode char U+0490 (decimal 1168)
+   defining Unicode char U+0491 (decimal 1169)
+   defining Unicode char U+0492 (decimal 1170)
+   defining Unicode char U+0493 (decimal 1171)
+   defining Unicode char U+0496 (decimal 1174)
+   defining Unicode char U+0497 (decimal 1175)
+   defining Unicode char U+0498 (decimal 1176)
+   defining Unicode char U+0499 (decimal 1177)
+   defining Unicode char U+049A (decimal 1178)
+   defining Unicode char U+049B (decimal 1179)
+   defining Unicode char U+049C (decimal 1180)
+   defining Unicode char U+049D (decimal 1181)
+   defining Unicode char U+04A0 (decimal 1184)
+   defining Unicode char U+04A1 (decimal 1185)
+   defining Unicode char U+04A2 (decimal 1186)
+   defining Unicode char U+04A3 (decimal 1187)
+   defining Unicode char U+04A4 (decimal 1188)
+   defining Unicode char U+04A5 (decimal 1189)
+   defining Unicode char U+04AA (decimal 1194)
+   defining Unicode char U+04AB (decimal 1195)
+   defining Unicode char U+04AE (decimal 1198)
+   defining Unicode char U+04AF (decimal 1199)
+   defining Unicode char U+04B0 (decimal 1200)
+   defining Unicode char U+04B1 (decimal 1201)
+   defining Unicode char U+04B2 (decimal 1202)
+   defining Unicode char U+04B3 (decimal 1203)
+   defining Unicode char U+04B6 (decimal 1206)
+   defining Unicode char U+04B7 (decimal 1207)
+   defining Unicode char U+04B8 (decimal 1208)
+   defining Unicode char U+04B9 (decimal 1209)
+   defining Unicode char U+04BA (decimal 1210)
+   defining Unicode char U+04BB (decimal 1211)
+   defining Unicode char U+04C0 (decimal 1216)
+   defining Unicode char U+04C1 (decimal 1217)
+   defining Unicode char U+04C2 (decimal 1218)
+   defining Unicode char U+04D0 (decimal 1232)
+   defining Unicode char U+04D1 (decimal 1233)
+   defining Unicode char U+04D2 (decimal 1234)
+   defining Unicode char U+04D3 (decimal 1235)
+   defining Unicode char U+04D4 (decimal 1236)
+   defining Unicode char U+04D5 (decimal 1237)
+   defining Unicode char U+04D6 (decimal 1238)
+   defining Unicode char U+04D7 (decimal 1239)
+   defining Unicode char U+04D8 (decimal 1240)
+   defining Unicode char U+04D9 (decimal 1241)
+   defining Unicode char U+04DA (decimal 1242)
+   defining Unicode char U+04DB (decimal 1243)
+   defining Unicode char U+04DC (decimal 1244)
+   defining Unicode char U+04DD (decimal 1245)
+   defining Unicode char U+04DE (decimal 1246)
+   defining Unicode char U+04DF (decimal 1247)
+   defining Unicode char U+04E2 (decimal 1250)
+   defining Unicode char U+04E3 (decimal 1251)
+   defining Unicode char U+04E4 (decimal 1252)
+   defining Unicode char U+04E5 (decimal 1253)
+   defining Unicode char U+04E6 (decimal 1254)
+   defining Unicode char U+04E7 (decimal 1255)
+   defining Unicode char U+04E8 (decimal 1256)
+   defining Unicode char U+04E9 (decimal 1257)
+   defining Unicode char U+04EC (decimal 1260)
+   defining Unicode char U+04ED (decimal 1261)
+   defining Unicode char U+04EE (decimal 1262)
+   defining Unicode char U+04EF (decimal 1263)
+   defining Unicode char U+04F0 (decimal 1264)
+   defining Unicode char U+04F1 (decimal 1265)
+   defining Unicode char U+04F2 (decimal 1266)
+   defining Unicode char U+04F3 (decimal 1267)
+   defining Unicode char U+04F4 (decimal 1268)
+   defining Unicode char U+04F5 (decimal 1269)
+   defining Unicode char U+04F8 (decimal 1272)
+   defining Unicode char U+04F9 (decimal 1273)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2423 (decimal 9251)
+))
+Package babel Info: Making " an active character on input line 120.
+Package babel Info: Default for \cyrdash is provided on input line 157.
+) (/usr/local/texlive/2019/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2aenc.def
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+LaTeX Font Info:    Redeclaring font encoding T2A on input line 42.
+)
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 105.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/cyrillic/t2acmr.fd
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 )) (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
  (/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
@@ -233,7 +445,12 @@ Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count112
- (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+Package hyperref Info: Option `unicode' set `true' on input line 3475.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2018/11/30 v6.88e Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
@@ -307,26 +524,49 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen136
+\lightrulewidth=\dimen137
+\cmidrulewidth=\dimen138
+\belowrulesep=\dimen139
+\belowbottomsep=\dimen140
+\aboverulesep=\dimen141
+\abovetopsep=\dimen142
+\cmidrulesep=\dimen143
+\cmidrulekern=\dimen144
+\defaultaddspace=\dimen145
+\@cmidla=\count121
+\@cmidlb=\count122
+\@aboverulesep=\dimen146
+\@belowrulesep=\dimen147
+\@thisruleclass=\count123
+\@lastruleclass=\count124
+\@thisrulewidth=\dimen148
 )
-\c@definition=\count121
-\c@theorem=\count122
+\c@definition=\count125
+\c@theorem=\count126
  (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -364,16 +604,16 @@ LaTeX Font Info:    ... okay on input line 43.
 
 (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count123
-\scratchdimen=\dimen136
+\scratchcounter=\count127
+\scratchdimen=\dimen149
 \scratchbox=\box31
-\nofMPsegments=\count124
-\nofMParguments=\count125
+\nofMPsegments=\count128
+\nofMParguments=\count129
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count126
-\MPscratchDim=\dimen137
-\MPnumerator=\count127
-\makeMPintoPDFobject=\count128
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen150
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
 \everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -391,17 +631,17 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 45.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count129
+\c@section@level=\count133
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
  (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.out) (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.out)
 \@outlinefile=\write3
 \openout3 = `main.out'.
@@ -409,58 +649,164 @@ LaTeX Info: Redefining \nameref on input line 43.
  [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.toc
-LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+LaTeX Font Info:    Try loading font information for U+msb on input line 7.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
- [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 71.
+ [2]
+<potential_future.png, id=140, 578.16pt x 361.35pt>
+File: potential_future.png Graphic file (type png)
+<use potential_future.png>
+Package pdftex.def Info: potential_future.png  used on input line 71.
+(pdftex.def)             Requested size: 290.22107pt x 181.38583pt.
+ [3 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/potential_future.png>]
+<correlation_ts.png, id=151, 867.24pt x 216.81pt>
+File: correlation_ts.png Graphic file (type png)
+<use correlation_ts.png>
+Package pdftex.def Info: correlation_ts.png  used on input line 82.
+(pdftex.def)             Requested size: 478.86255pt x 119.71564pt.
+ [4 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/correlation_ts.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 93.
  (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
- [4] [5] [6] [7] [8] [9] [10] [11] [12]
-Overfull \hbox (8.77129pt too wide) in paragraph at lines 301--302
-[]\OT1/cmr/bx/n/10.95 Transformer-RealNVP \OT1/cmr/m/n/10.95 com-bines the nor-mal-iz-ing flow and the attension-based model,
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 93.
+ [5] [6] [7] [8]
+<gan.png, id=228, 1415.2875pt x 465.74pt>
+File: gan.png Graphic file (type png)
+<use gan.png>
+Package pdftex.def Info: gan.png  used on input line 215.
+(pdftex.def)             Requested size: 386.95897pt x 127.33624pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9] [10 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gan.png (PNG copy)>]
+<nnar.pdf, id=245, 843.15pt x 280.1667pt>
+File: nnar.pdf Graphic file (type pdf)
+<use nnar.pdf>
+Package pdftex.def Info: nnar.pdf  used on input line 261.
+(pdftex.def)             Requested size: 386.95897pt x 128.58327pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[11]
+<lstm.pdf, id=252, 696.68275pt x 330.27388pt>
+File: lstm.pdf Graphic file (type pdf)
+<use lstm.pdf>
+Package pdftex.def Info: lstm.pdf  used on input line 279.
+(pdftex.def)             Requested size: 386.95897pt x 183.4503pt.
+ [12 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/nnar.pdf> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/lstm.pdf>]
+<attention.pdf, id=288, 954.4458pt x 468.79138pt>
+File: attention.pdf Graphic file (type pdf)
+<use attention.pdf>
+Package pdftex.def Info: attention.pdf  used on input line 322.
+(pdftex.def)             Requested size: 386.95897pt x 190.05975pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13]
+<tcn.pdf, id=299, 1493.58pt x 905.30219pt>
+File: tcn.pdf Graphic file (type pdf)
+<use tcn.pdf>
+Package pdftex.def Info: tcn.pdf  used on input line 341.
+(pdftex.def)             Requested size: 386.95897pt x 234.54419pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/attention.pdf>] [15 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn.pdf>]
+<transformation_var.pdf, id=349, 379.4175pt x 191.7564pt>
+File: transformation_var.pdf Graphic file (type pdf)
+<use transformation_var.pdf>
+Package pdftex.def Info: transformation_var.pdf  used on input line 374.
+(pdftex.def)             Requested size: 290.22107pt x 146.67851pt.
+ [16 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformation_var.pdf>] [17]
+<var.png, id=383, 1447.4075pt x 429.605pt>
+File: var.png Graphic file (type png)
+<use var.png>
+Package pdftex.def Info: var.png  used on input line 458.
+(pdftex.def)             Requested size: 386.95897pt x 114.85428pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<transformer_realnvp.png, id=384, 1421.31pt x 423.5825pt>
+File: transformer_realnvp.png Graphic file (type png)
+<use transformer_realnvp.png>
+Package pdftex.def Info: transformer_realnvp.png  used on input line 465.
+(pdftex.def)             Requested size: 386.95897pt x 115.31891pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<gaussian_tcn.png, id=385, 1425.325pt x 429.605pt>
+File: gaussian_tcn.png Graphic file (type png)
+<use gaussian_tcn.png>
+Package pdftex.def Info: gaussian_tcn.png  used on input line 472.
+(pdftex.def)             Requested size: 386.95897pt x 116.63075pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<tcn_cgan.png, id=386, 1419.3025pt x 427.5975pt>
+File: tcn_cgan.png Graphic file (type png)
+<use tcn_cgan.png>
+Package pdftex.def Info: tcn_cgan.png  used on input line 479.
+(pdftex.def)             Requested size: 386.95897pt x 116.58162pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<vec_lstm.png, id=387, 1429.34pt x 423.5825pt>
+File: vec_lstm.png Graphic file (type png)
+<use vec_lstm.png>
+Package pdftex.def Info: vec_lstm.png  used on input line 486.
+(pdftex.def)             Requested size: 386.95897pt x 114.67258pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[18] [19 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/var.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/transformer_realnvp.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/gaussian_tcn.png (PNG copy)> </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/tcn_cgan.png (PNG copy)>] (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl [20 </Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/vec_lstm.png (PNG copy)>]
+Underfull \hbox (badness 1688) in paragraph at lines 144--150
+\OT1/cmr/m/n/12 11 2020.  URL []$\OT1/cmtt/m/n/12 https : / / www . researchgate . net / publication / 346493740 _ The _ M5 _
  []
 
-[13] [14] (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.bbl [15]
-Underfull \hbox (badness 1281) in paragraph at lines 93--102
-[]\OT1/cmr/m/n/10.95 S. Makri-dakis, E. Spili-o-tis, and V. As-si-makopou-los.  The m4 com-pe-ti-tion:
+
+Underfull \hbox (badness 4229) in paragraph at lines 166--169
+[]\OT1/cmr/m/n/12 L. Ruthotto and E. Haber.  An in-tro-duc-tion to deep gen-er-a-tive mod-el-ing.
  []
 
-[16])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 386.
- [17]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 386.
+[21])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 501.
+ [22]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 501.
  (/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 386.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 386.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 501.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 501.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 25524A2D5F320A4A4BA81CD7CA5D2B0B;1841.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 386.
+(rerunfilecheck)             Checksum: EDF42AEF6A00DE69E1E4A251E0C85EA1;3899.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 501.
  ) 
 Here is how much of TeX's memory you used:
- 9193 strings out of 492616
- 136395 string characters out of 6129481
- 256859 words of memory out of 5000000
- 12921 multiletter control sequences out of 15000+600000
- 12501 words of font info for 47 fonts, out of 8000000 for 9000
+ 13246 strings out of 492616
+ 187403 string characters out of 6129481
+ 289170 words of memory out of 5000000
+ 16905 multiletter control sequences out of 15000+600000
+ 16170 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,13n,38p,2636b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (17 pages, 263283 bytes).
+ 36i,13n,39p,2636b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (22 pages, 1528426 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 338 compressed objects within 4 object streams
- 70 named destinations out of 1000 (max. 500000)
- 217 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 520 PDF objects out of 1000 (max. 8388607)
+ 450 compressed objects within 5 object streams
+ 93 named destinations out of 1000 (max. 500000)
+ 258 words of extra memory for PDF output out of 10000 (max. 10000000)
 

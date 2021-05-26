@@ -1,4 +1,4 @@
-\begin{thebibliography}{22}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -8,13 +8,21 @@
 \bibitem[Bahdanau et~al.(2016)Bahdanau, Cho, and Bengio]{bahdanau2016neural}
 D.~Bahdanau, K.~Cho, and Y.~Bengio.
 \newblock Neural machine translation by jointly learning to align and
-  translate, 2016.
+  translate.
+\newblock \emph{arXiv:1409.0473}, 2016.
 
 \bibitem[Bai et~al.(2018)Bai, Kolter, and Koltun]{BaiTCN2018}
 S.~Bai, J.~Z. Kolter, and V.~Koltun.
 \newblock An empirical evaluation of generic convolutional and recurrent
   networks for sequence modeling.
 \newblock \emph{arXiv:1803.01271}, 2018.
+
+\bibitem[Borovykh et~al.(2018)Borovykh, Bohte, and
+  Oosterlee]{borovykh2018conditional}
+A.~Borovykh, S.~Bohte, and C.~W. Oosterlee.
+\newblock Conditional time series forecasting with convolutional neural
+  networks.
+\newblock \emph{arXiv:1703.04691}, 2018.
 
 \bibitem[Chen et~al.(2020)Chen, Kang, Chen, and Wang]{gaussiantcn2020}
 Y.~Chen, Y.~Kang, Y.~Chen, and Z.~Wang.
@@ -28,13 +36,33 @@ Y.~Chen, Y.~Kang, Y.~Chen, and Z.~Wang.
 \bibitem[Choi et~al.(2018)Choi, Choi, Kim, Ha, Kim, and Choo]{choi2018stargan}
 Y.~Choi, M.~Choi, M.~Kim, J.-W. Ha, S.~Kim, and J.~Choo.
 \newblock Stargan: Unified generative adversarial networks for multi-domain
-  image-to-image translation, 2018.
+  image-to-image translation.
+\newblock \emph{arXiv:1711.09020}, 2018.
+
+\bibitem[Fan et~al.(2019)Fan, Zhang, Pan, Li, Zhang, Yuan, Wu, Wang, Pei, and
+  Huang]{multihorizon}
+C.~Fan, Y.~Zhang, Y.~Pan, X.~Li, C.~Zhang, R.~Yuan, D.~Wu, W.~Wang, J.~Pei, and
+  H.~Huang.
+\newblock Multi-horizon time series forecasting with temporal attention
+  learning.
+\newblock In \emph{Proceedings of the 25th ACM SIGKDD International Conference
+  on Knowledge Discovery; Data Mining}, KDD '19, page 2527–2535, New York,
+  NY, USA, 2019. Association for Computing Machinery.
+\newblock ISBN 9781450362016.
+\newblock \doi{10.1145/3292500.3330662}.
+
+\bibitem[Flunkert et~al.(2017)Flunkert, Salinas, and Gasthaus]{deepar}
+V.~Flunkert, D.~Salinas, and J.~Gasthaus.
+\newblock Deepar: Probabilistic forecasting with autoregressive recurrent
+  networks.
+\newblock \emph{CoRR}, abs/1704.04110, 2017.
 
 \bibitem[Goodfellow et~al.(2014)Goodfellow, Pouget-Abadie, Mirza, Xu,
   Warde-Farley, Ozair, Courville, and Bengio]{goodfellow2014}
 I.~J. Goodfellow, J.~Pouget-Abadie, M.~Mirza, B.~Xu, D.~Warde-Farley, S.~Ozair,
   A.~Courville, and Y.~Bengio.
-\newblock Generative adversarial networks, 2014.
+\newblock Generative adversarial networks.
+\newblock \emph{arXiv:1406.2661}, 2014.
 
 \bibitem[Guerrero(1993)]{guerrero93}
 V.~M. Guerrero.
@@ -46,7 +74,9 @@ V.~M. Guerrero.
 \bibitem[Hewamalage et~al.(2019)Hewamalage, Bergmeir, and Bandara]{rnn2019}
 H.~Hewamalage, C.~Bergmeir, and K.~Bandara.
 \newblock Recurrent neural networks for time series forecasting: Current status
-  and future directions, 09 2019.
+  and future directions.
+\newblock \emph{CoRR}, abs/1909.00590, 2019.
+\newblock URL \url{http://arxiv.org/abs/1909.00590}.
 
 \bibitem[Hyndman and Athanasopoulos(2021)]{fpp3}
 R.~J. Hyndman and G.~Athanasopoulos.
@@ -62,18 +92,21 @@ R.~Koenker.
 \bibitem[Koochali et~al.(2020)Koochali, Dengel, and Ahmed]{koochali2020like}
 A.~Koochali, A.~Dengel, and S.~Ahmed.
 \newblock If you like it, gan it. probabilistic multivariate times series
-  forecast with gan, 2020.
+  forecast with gan.
+\newblock \emph{arXiv:2005.01181}, 2020.
 
 \bibitem[Koshiyama et~al.(2019)Koshiyama, Firoozye, and
   Treleaven]{koshiyama2019generative}
 A.~Koshiyama, N.~Firoozye, and P.~Treleaven.
 \newblock Generative adversarial networks for financial trading strategies
-  fine-tuning and combination, 2019.
+  fine-tuning and combination.
+\newblock \emph{arXiv:1901.01751}, 2019.
 
 \bibitem[Lezmi et~al.(2020)Lezmi, Roche, Roncalli, and Xu]{lezmi2020improving}
 E.~Lezmi, J.~Roche, T.~Roncalli, and J.~Xu.
 \newblock Improving the robustness of trading strategy backtesting with
-  boltzmann machines and generative adversarial networks, 2020.
+  boltzmann machines and generative adversarial networks.
+\newblock \emph{arXiv:2007.04838}, 2020.
 
 \bibitem[Lim and Zohren(2021)]{tsdeeplearning2021}
 B.~Lim and S.~Zohren.
@@ -81,6 +114,12 @@ B.~Lim and S.~Zohren.
 \newblock \emph{Philosophical transactions. Series A, Mathematical, physical,
   and engineering sciences}, 379:\penalty0 20200209, 04 2021.
 \newblock \doi{10.1098/rsta.2020.0209}.
+
+\bibitem[Lim et~al.(2020)Lim, Arik, Loeff, and Pfister]{interpr}
+B.~Lim, S.~O. Arik, N.~Loeff, and T.~Pfister.
+\newblock Temporal fusion transformers for interpretable multi-horizon time
+  series forecasting.
+\newblock \emph{arXiv:1912.09363}, 2020.
 
 \bibitem[Ltkepohl(2007)]{mts2007}
 H.~Ltkepohl.
@@ -106,6 +145,14 @@ S.~Makridakis, E.~Spiliotis, V.~Assimakopoulos, Z.~Chen, A.~Gaba, I.~Tsetlin,
   and R.~Winkler.
 \newblock The m5 uncertainty competition: Results, findings and conclusions, 11
   2020{\natexlab{b}}.
+\newblock URL
+  \url{https://www.researchgate.net/publication/346493740_The_M5_Uncertainty_competition_Results_findings_and_conclusions}.
+
+\bibitem[Mogren(2016)]{oord2016wavenet}
+O.~Mogren.
+\newblock {C-RNN-GAN:} continuous recurrent neural networks with adversarial
+  training.
+\newblock \emph{CoRR}, abs/1611.09904, 2016.
 
 \bibitem[Rasul et~al.(2021)Rasul, Sheikh, Schuster, Bergmann, and
   Vollgraf]{normflow2021}
@@ -117,7 +164,8 @@ K.~Rasul, A.-S. Sheikh, I.~Schuster, U.~M. Bergmann, and R.~Vollgraf.
 
 \bibitem[Ruthotto and Haber(2021)]{introductiondgm2021}
 L.~Ruthotto and E.~Haber.
-\newblock An introduction to deep generative modeling, 2021.
+\newblock An introduction to deep generative modeling.
+\newblock \emph{arXiv:2103.05180}, 2021.
 
 \bibitem[Salinas et~al.(2019)Salinas, Bohlke-Schneider, Callot, Medico, and
   Gasthaus]{Salinas2019HighDimensionalMF}
@@ -126,17 +174,17 @@ D.~Salinas, M.~Bohlke-Schneider, L.~Callot, R.~Medico, and J.~Gasthaus.
   copula processes.
 \newblock In \emph{NeurIPS}, 2019.
 
-\bibitem[van~den Oord et~al.(2016)van~den Oord, Dieleman, Zen, Simonyan,
-  Vinyals, Graves, Kalchbrenner, Senior, and Kavukcuoglu]{oord2016wavenet}
-A.~van~den Oord, S.~Dieleman, H.~Zen, K.~Simonyan, O.~Vinyals, A.~Graves,
-  N.~Kalchbrenner, A.~Senior, and K.~Kavukcuoglu.
-\newblock Wavenet: A generative model for raw audio, 2016.
+\bibitem[Smith and Smith(2020)]{cganforts}
+K.~E. Smith and A.~O. Smith.
+\newblock Conditional {GAN} for timeseries generation.
+\newblock \emph{CoRR}, abs/2006.16477, 2020.
 
 \bibitem[Vaswani et~al.(2017)Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez,
   Kaiser, and Polosukhin]{vaswani2017attention}
 A.~Vaswani, N.~Shazeer, N.~Parmar, J.~Uszkoreit, L.~Jones, A.~N. Gomez,
   L.~Kaiser, and I.~Polosukhin.
-\newblock Attention is all you need, 2017.
+\newblock Attention is all you need.
+\newblock \emph{arXiv:1706.03762}, 2017.
 
 \bibitem[Wiese et~al.(2020)Wiese, Knobloch, Korn, and Kretschmer]{quantgan2020}
 M.~Wiese, R.~Knobloch, R.~Korn, and P.~Kretschmer.
@@ -146,5 +194,12 @@ M.~Wiese, R.~Knobloch, R.~Korn, and P.~Kretschmer.
 \newblock ISSN 1469-7696.
 \newblock \doi{10.1080/14697688.2020.1730426}.
 \newblock URL \url{http://dx.doi.org/10.1080/14697688.2020.1730426}.
+
+\bibitem[Yoon et~al.(2019)Yoon, Jarrett, and van~der Schaar]{tsgan}
+J.~Yoon, D.~Jarrett, and M.~van~der Schaar.
+\newblock Time-series generative adversarial networks.
+\newblock In H.~Wallach, H.~Larochelle, and A.~Beygelzimer, editors,
+  \emph{Advances in Neural Information Processing Systems}, volume~32. Curran
+  Associates, Inc., 2019.
 
 \end{thebibliography}

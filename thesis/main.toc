@@ -1,28 +1,28 @@
 \babel@toc {english}{}
+\babel@toc {english}{}
+\babel@toc {russian}{}
+\babel@toc {english}{}
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}% 
-\contentsline {section}{\numberline {2}Literature reviews}{5}{section.2}% 
-\contentsline {section}{\numberline {3}Background}{5}{section.3}% 
-\contentsline {subsection}{\numberline {3.1}Probabilistic modeling}{5}{subsection.3.1}% 
-\contentsline {subsection}{\numberline {3.2}Vector autoregressive model}{6}{subsection.3.2}% 
-\contentsline {subsubsection}{\numberline {3.2.1}Transformations for stationarity}{6}{subsubsection.3.2.1}% 
-\contentsline {subsection}{\numberline {3.3}Deep generative models}{7}{subsection.3.3}% 
-\contentsline {subsubsection}{\numberline {3.3.1}Direct parametric approach}{7}{subsubsection.3.3.1}% 
-\contentsline {subsubsection}{\numberline {3.3.2}Generative adversarial network}{8}{subsubsection.3.3.2}% 
-\contentsline {subsubsection}{\numberline {3.3.3}Normalizing flow}{9}{subsubsection.3.3.3}% 
-\contentsline {subsection}{\numberline {3.4}Architectures for time series forecasting}{10}{subsection.3.4}% 
-\contentsline {subsubsection}{\numberline {3.4.1}Neural network autoregression}{10}{subsubsection.3.4.1}% 
-\contentsline {subsubsection}{\numberline {3.4.2}Recurrent neural network}{11}{subsubsection.3.4.2}% 
-\contentsline {subsubsection}{\numberline {3.4.3}Attention-based model}{11}{subsubsection.3.4.3}% 
-\contentsline {subsubsection}{\numberline {3.4.4}Temporal convolutional network}{12}{subsubsection.3.4.4}% 
-\contentsline {section}{\numberline {4}Experimental setup}{13}{section.4}% 
-\contentsline {section}{\numberline {5}Metrics}{13}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Quantile loss}{14}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Autocorrelation loss}{14}{subsection.5.2}% 
-\contentsline {subsection}{\numberline {5.3}Correlation loss}{14}{subsection.5.3}% 
-\contentsline {section}{\numberline {6}Datasets}{14}{section.6}% 
-\contentsline {subsection}{\numberline {6.1}Retail Trade, Australia}{14}{subsection.6.1}% 
-\contentsline {subsection}{\numberline {6.2}Retail australia}{15}{subsection.6.2}% 
-\contentsline {subsection}{\numberline {6.3}Retail australia}{15}{subsection.6.3}% 
-\contentsline {section}{\numberline {7}Numerical results}{15}{section.7}% 
-\contentsline {section}{\numberline {8}Implementation details}{15}{section.8}% 
-\contentsline {section}{\numberline {9}Conclusion}{15}{section.9}% 
+\contentsline {section}{\numberline {2}Background}{5}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Probabilistic modeling}{5}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Vector autoregressive model}{6}{subsection.2.2}% 
+\contentsline {subsubsection}{\numberline {2.2.1}Transformations for stationarity}{7}{subsubsection.2.2.1}% 
+\contentsline {subsection}{\numberline {2.3}Deep generative models}{7}{subsection.2.3}% 
+\contentsline {subsubsection}{\numberline {2.3.1}Direct parametric approach}{8}{subsubsection.2.3.1}% 
+\contentsline {subsubsection}{\numberline {2.3.2}Generative adversarial network}{8}{subsubsection.2.3.2}% 
+\contentsline {subsubsection}{\numberline {2.3.3}Normalizing flow}{9}{subsubsection.2.3.3}% 
+\contentsline {subsection}{\numberline {2.4}Architectures for time series forecasting}{10}{subsection.2.4}% 
+\contentsline {subsubsection}{\numberline {2.4.1}Neural network autoregression}{11}{subsubsection.2.4.1}% 
+\contentsline {subsubsection}{\numberline {2.4.2}Recurrent neural network}{12}{subsubsection.2.4.2}% 
+\contentsline {subsubsection}{\numberline {2.4.3}Attention-based model}{13}{subsubsection.2.4.3}% 
+\contentsline {subsubsection}{\numberline {2.4.4}Temporal convolutional network}{14}{subsubsection.2.4.4}% 
+\contentsline {section}{\numberline {3}Literature reviews}{15}{section.3}% 
+\contentsline {section}{\numberline {4}Experimental setup}{16}{section.4}% 
+\contentsline {section}{\numberline {5}Metrics}{17}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Quantile loss}{17}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Autocorrelation loss}{17}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Correlation loss}{18}{subsection.5.3}% 
+\contentsline {section}{\numberline {6}Dataset}{18}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Retail Trade, Australia}{18}{subsection.6.1}% 
+\contentsline {section}{\numberline {7}Numerical results}{18}{section.7}% 
+\contentsline {section}{\numberline {8}Conclusion}{19}{section.8}% 
