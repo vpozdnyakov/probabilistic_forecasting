@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  26 MAY 2021 03:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.1.18)  26 MAY 2021 05:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -757,11 +757,11 @@ Package pdftex.def Info: gaussian_tcn.png  used on input line 472.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<tcn_cgan.png, id=386, 1419.3025pt x 427.5975pt>
+<tcn_cgan.png, id=386, 1421.31pt x 429.605pt>
 File: tcn_cgan.png Graphic file (type png)
 <use tcn_cgan.png>
 Package pdftex.def Info: tcn_cgan.png  used on input line 479.
-(pdftex.def)             Requested size: 386.95897pt x 116.58162pt.
+(pdftex.def)             Requested size: 386.95897pt x 116.95851pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -803,7 +803,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  36i,13n,39p,2636b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (22 pages, 1528426 bytes).
+Output written on "/Users/vitalijpozdnakov/Yandex.Disk.localized/Data Science/HSE/Courses/Master Thesis/probabilistic_forecasting/thesis/main.pdf" (22 pages, 1551259 bytes).
 PDF statistics:
  520 PDF objects out of 1000 (max. 8388607)
  450 compressed objects within 5 object streams
