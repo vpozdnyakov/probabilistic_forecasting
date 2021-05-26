@@ -382,7 +382,7 @@ For testing, I chose several models that I found in recent papers on probabilist
 
 \textbf{Transformer Real NVP} combines the normalizing flow and the attension-based model, this was proposed in \cite{normflow2021}. The hyperparameters were chosen as suggested by the authors of the paper.
 
-I also have implemented the model \textbf{TCN-cGAN} that combines conditional GAN and TCN. It is based on the unconditional Quant GAN model introduced in \cite{quantgan2020}, but it is conditional by the historical values, as suggested in \cite{koochali2020like}. The hyperparameters were chosen as suggested by the authors of \cite{quantgan2020}.
+I also have introduced the model called \textbf{TCN-cGAN} that combines conditional GAN and TCN. It is based on the unconditional Quant GAN model introduced in \cite{quantgan2020}, but it is conditional by the historical values, as suggested in \cite{koochali2020like}. The hyperparameters were chosen as suggested by the authors of \cite{quantgan2020}.
 
 The minmax scaling was performed for all datasets for all components independently before feeding it to the neural network models to ensure the approximately equal gradients among all components of time series. The minmax scaling is defined as follows
 $$x_\text{scaled} = \frac{x-x_{\min}}{x_{\max} - x_{\min}}$$
@@ -409,7 +409,7 @@ And finally, the full quantile loss is the average among all u-th quantile losse
 \subsection{Autocorrelation loss}
 
 Autocorrelation loss (ACL) indicates how close the values of the partial autocorrelatied function (PACF) between test and predicted values
-$$\text{ACL} = \text{MSE}
+$$\text{ACL}_i = \text{MSE}
 \left(\text{PACF}(y_i), \frac{1}{N} \sum_{j=1}^N \text{PACF}(\hat y_i^j) \right)
 $$
 where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. In my experiments, I set $N=100$ and the number of lags for calculated PACF is 20. The full autocorrelation loss is the avarage among all components of time series.
@@ -417,7 +417,7 @@ where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th 
 \subsection{Correlation loss}
 
 Correlation loss (CL) is given as mean squared error between an empirical correlation matrix of test values and the mean of empirical correlation matricies of generated values
-$$\text{CL} = \text{MSE} \left( R (\mathbf y_t), \frac{1}{N} \sum_i  R(\hat{\mathbf y}^i_t) \right)$$
+$$\text{CL}_t = \text{MSE} \left( R (\mathbf y_t), \frac{1}{N} \sum_i  R(\hat{\mathbf y}^i_t) \right)$$
 where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. The full correlation loss is the avarage among all time moments in a predictable horizon.
 
 \section{Dataset}
