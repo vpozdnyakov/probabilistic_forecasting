@@ -187,7 +187,7 @@ In this limit case, the generator is the identity function $G(\mathbf z, \mathbf
 
 Generative adversarial networks (GANs) are a distribution modeling strategy that uses two neural networks: the generator $G$ and the discriminator $D$. The generator $G$ performs the task of translating samples from a relatively simple distribution of $p_\mathbf z$ to a rich, complex, multivariate distribution of a stochastic process $p_\mathbf y$. The task of discriminator $D$ is to distinguish the true data from the generated data. The generated and true data in the GAN context are called fake and real data. Strictly speaking, the discriminator's task is to minimize the binary classification error from input data that contains both real and fake data. On the other hand, the task of the generator is to generate such fake data so that it is as difficult as possible for the discriminator to distinguish them from the real ones. The generator and discriminator are trained simultaneously, so they compete until the generator is able to generate indistinguishable data from the real data.
 
-From the mathematical point of view, a generator is a function that translates vectors of one space into a vector of another space $G: \mathbb R^q \to \mathbb R^K$, as described in the section \ref{deepgenmodels}. Let say that the generator model the distribution $p_\mathbf{\hat y}$ that we want to as close as possible to the real distribution $p_\mathbf y$. The discriminator is a function that evaluates how likely the observation is to be real, $D: \mathbb R^K \to [0, 1]$, where 0 means fake data and 1 means real data. Thus, 0.5 means that for the discriminator, such data looks equally real and fake. As previously mentioned, the generator and discriminator are trained simultaneously, that is, they play a two-player minimax game with the value function $V$
+From the mathematical point of view, a generator is a function that translates vectors of one space into a vector of another space $G: \mathbb R^q \to \mathbb R^K$, as described in the section \ref{deepgenmodels}. Let us say that the generator models the distribution $p_\mathbf{\hat y}$ that we want to as close as possible to the real distribution $p_\mathbf y$. The discriminator is a function that evaluates how likely the observation is to be real, $D: \mathbb R^K \to [0, 1]$, where 0 means fake data and 1 means real data. Thus, 0.5 means that for the discriminator, such data looks equally real and fake. As previously mentioned, the generator and discriminator are trained simultaneously, that is, they play a two-player minimax game with the value function $V$
 $$\begin{aligned}
 \min _{G} \max _{D} V(D, G) =\mathbb{E}_\mathbf{y}[\ln D(\mathbf{y})]+ \mathbb{E}_\mathbf{z}[\ln (1-D(G(\mathbf{z})))]
 \end{aligned}$$
@@ -221,7 +221,7 @@ One of the problems in GAN training is that there are no convergence guarantee. 
 
 The Normalizing flow \cite{normflow2021} is the generator of the form $G: \mathbb R^q \to \mathbb R^K$ where $q=K$ and consists of a sequence of invertible functions. Each function $f$ makes the transformation of initial density function as follows
 $$p_{\mathbf{y}}(\mathbf{y})=p_{\mathbf{z}}(\mathbf{z})\left|\operatorname{det}\left(\frac{\partial f(\mathbf{y})}{\partial \mathbf{y}}\right)\right|$$
-where $\partial f(\mathbf y)/\partial \mathbf y$ is the Jacobian of $f$ at $\mathbf y$. The main property of normalizing flows is they are designed so that the computing the Jacobian determinant takes no more than  $O(K)$ time and makes it easy to invert $f^{-1}(\mathbf z) = \mathbf y$.
+where $\partial f(\mathbf y)/\partial \mathbf y$ is the Jacobian of $f$ at $\mathbf y$. The main property of normalizing flows is they are designed so that the computing the Jacobian determinant takes linear time and makes it easy to invert $f^{-1}(\mathbf z) = \mathbf y$.
 
 There are a few options to define such functions. For example, Real NVP \cite{normflow2021} model is constructed on coupling layers that keep some inputs unchanged and transforms other inputs with respect to unchanged ones
 $$
@@ -244,7 +244,7 @@ A neural network consists of interconnected layers that consist of neurons. Each
 
 The simplest neural layer is the linear layer that has a matrix of trainable parameters $W$ and an intercept $b$. The linear layer performs a matrix multiplication of the form $xW^\top + b$. After each linear layer, an activation function is added that allows the neural network to learn complex nonlinear dependencies between variables. An example of such an activation function would be $\text{ReLU} (x) = \max (0, x)$. A neural network that consists only of linear layers and activation functions between layers is called a multi-layer perceptron (MLP) or feed forward network. 
 
-To train neural networks, the back propagation mechanism is used. The idea is that the training of a neural network takes place step by step. Each step consists of two stages. The first stage is forward: data from the training sample is fed to the input of the neural network, and the output value is compared with the correct answer and the value of the loss function (error) is calculated. For example, the loss function $\text{MSE} = (y - \hat y)^2$ where $y$ is correct answer and $\hat y$ is an output of the network can be used for the regression task. The second backward stage is the calculation of the gradient of the loss function for performing gradient descent. Since the neural network can be quite complex and the calculation of the analytical solution is difficult, a step-by-step calculation of the gradient for each layer is performed, starting from the last one, which is then passed to the earlier layers using the chain rule
+To train neural networks, the back propagation mechanism is used. The idea is that the training of a neural network takes place step by step. Each step consists of two stages. The first stage is forward: data from the training sample is fed to the input of the neural network, and the output value is compared with the correct answer and the value of the loss function (error) is calculated. For example, the loss function $\text{MSE} = (y - \hat y)^2$ can be used for the regression task. Here is $y$ is a correct answer and $\hat y$ is an output of the network. The second backward stage is the calculation of the gradient of the loss function for performing gradient descent. Since the neural network can be quite complex and the calculation of the analytical solution is difficult, a step-by-step calculation of the gradient for each layer is performed, starting from the last one, which is then passed to the earlier layers using the chain rule
 $$\frac{d y}{d x}=\frac{d y}{d u} \cdot \frac{d u}{d v} \cdot \frac{d v}{d x}$$
 The training of the neural network is performed by updating trainable parameters $\theta$ by gradint descend so that
 $$\theta \leftarrow \theta - \alpha \nabla_\theta L$$
@@ -408,16 +408,16 @@ And finally, the full quantile loss is the average among all u-th quantile losse
 
 \subsection{Autocorrelation loss}
 
-Autocorrelation loss indicates how close the values of the partial autocorrelatied function (PACF) between test and predicted values
-$$\text{ACL} (y_{i}) = \text{MSE}
+Autocorrelation loss (ACL) indicates how close the values of the partial autocorrelatied function (PACF) between test and predicted values
+$$\text{ACL} = \text{MSE}
 \left(\text{PACF}(y_i), \frac{1}{N} \sum_{j=1}^N \text{PACF}(\hat y_i^j) \right)
 $$
 where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. In my experiments, I set $N=100$ and the number of lags for calculated PACF is 20. The full autocorrelation loss is the avarage among all components of time series.
 
 \subsection{Correlation loss}
 
-Correlation loss is given as mean squared error between an empirical correlation matrix of test values and the mean of empirical correlation matricies of generated values
-$$\text{CL}(\mathbf y_t) = \text{MSE} \left( R (\mathbf y_t), \frac{1}{N} \sum_i  R(\hat{\mathbf y}^i_t) \right)$$
+Correlation loss (CL) is given as mean squared error between an empirical correlation matrix of test values and the mean of empirical correlation matricies of generated values
+$$\text{CL} = \text{MSE} \left( R (\mathbf y_t), \frac{1}{N} \sum_i  R(\hat{\mathbf y}^i_t) \right)$$
 where $N$ is the number of generated time series and $\hat y_{i}^j$ is the j-th sample from the generative model. The full correlation loss is the avarage among all time moments in a predictable horizon.
 
 \section{Dataset}
