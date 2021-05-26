@@ -151,9 +151,9 @@ where the parameter $\lambda \in \mathbb R$ can be selected by Guerro estimation
 
 \subsection{Deep generative models} \label{deepgenmodels}
 
-The main goal of generative modeling is to obtain a representation of the intractable distribution $p_\mathbf y$ defined on $\mathbb R^K$. As a rule, $K$ is quite large and the distribution is quite complex. As a training set, we have independent identically distributed observations from the distribution $p_\mathbf y$. Our goal is to find a generator that can map observations from a simple prior distribution $p_\mathbf z$ defined on $\mathbb R^q$ to the distribution $p_\mathbf y$
+The main goal of generative modeling is to obtain a representation of the intractable distribution $p_\mathbf y$ defined on $\mathbb R^K$. As a rule, $K$ is quite large and the distribution is quite complex. As a training set, we have independent identically distributed observations from the distribution $p_\mathbf y$. Our goal is to find a generator that can map observations from a simple prior distribution $p_\mathbf z$ defined on $\mathbb R^q$ to the distribution $p_\mathbf y$ defined on $\mathbb R^K$
 $$G: \mathbb R^q \to \mathbb R^K$$
-In other words, the generator translates samples (random noise) from a simple distribution $\mathbf z \sim p_Z$ to a distribution $\mathbf y \sim p_\mathbf y$ such that $G(\mathbf z) \approx \mathbf y$. As a common practice, $K$ i.i.d. Gaussian random variables $\mathcal N(0, 1)$ are selected as the prior distribution, that is $p_{\mathbf z} = \mathcal N(0, I_K)$.
+In other words, the generator translates samples (random noise) from a simple distribution $\mathbf z \sim p_Z$ to a distribution $\mathbf y \sim p_\mathbf y$ such that $G(\mathbf z) \approx \mathbf y$. As a common practice, $q$ i.i.d. Gaussian random variables $\mathcal N(0, 1)$ are selected as the prior distribution, that is $p_{\mathbf z} = \mathcal N(0, I_q)$.
 
 In terms of the time series forecasting, we want to model the conditional distribution $p_\mathbf y(\mathbf y_{T+h} | \mathbf y_{T}, \mathbf y_{T-1}, \dots)$ and it can be approximated as
 \begin{equation}\label{eq:gen}
